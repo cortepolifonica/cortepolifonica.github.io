@@ -1,0 +1,27 @@
+
+            <div class="bg-white md:w-full md:rounded-lg md:shadow-lg pt-5 pl-8 pr-8 pb-5">
+                <div class="grid grid-cols-4 col-gap-8">
+                    <div class="col-span-1 flex flex-col text-right text-xl text-gray-700 mb-auto">
+                        <span class="text-4xl">15</span>
+                        <span class="text-3xl">Novembre</span>
+                        <span class="">Chiesa di Santa Sofia</span>
+                        <span class="text-gray-600">Padova</span>
+                    </div>
+
+                    {{ $flyer := resources.Get "images/locandina-test.jpg" }}
+                    <div class="col-span-1">
+                        <img src="{{ $flyer.RelPermalink }}" alt="Locandina concerto sul Romanticismo Tedesco"
+                            class="rounded-md">
+                    </div>
+
+                    <div class="col-span-2">
+                        <h3 class="text-3xl mb-6">Romanticismo Tedesco</h3>
+                        <p>Commodi earum dolores quam velit sapiente. Sapiente at et esse est est saepe aspernatur ut.
+                            Tenetur sint et aut expedita.</p>
+                        <p>Dignissimos nemo quas necessitatibus et omnis nulla. Ut tenetur consequatur earum quaerat aut
+                            at ad architecto. Voluptatem nihil id aut culpa alias. Accusamus quia nemo alias
+                            exercitationem temporibus inventore exercitationem.</p>
+                    </div>
+
+                </div>
+            </div>

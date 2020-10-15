@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+
+<body class="font-serif md:w-screen md:mx-auto bg-gray-200">
+    <h1 class="pl-2 md:pl-0 text-left text-4xl md:mt-6 md:mb-6 md:w-8/12 md:mx-auto">La Corte Polifonica</h1>
+
+    <div id="cover-boxes" class="flex flex-wrap md:flex-none sm:grid sm:grid-cols-8 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12">
+        <div class="md:w-full bg-yellow-500 hidden lg:inline"></div>
+        <div class="md:w-full bg-purple-500 hidden xl:inline"></div>
+
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-red-500 cover-box sm:inline">
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-blue-500 cover-box sm:inline">
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-green-500 cover-box sm:inline">
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-purple-400 cover-box sm:inline">
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-yellow-400 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-teal-500 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-pink-500 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-indigo-400 cover-box sm:inline hidden">
+
+        <div class="md:w-full bg-yellow-500 hidden lg:inline"></div>
+        <div class="md:w-full bg-purple-500 hidden xl:inline"></div>
+
+        <div class="md:w-full bg-red-500 hidden xl:inline"></div>
+        <div class="md:w-full bg-blue-500 hidden lg:inline"></div>
+
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-green-500 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-yellow-400 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-indigo-400 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-red-500 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-teal-500 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-blue-500 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg-rot.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-pink-500 cover-box sm:inline hidden">
+        <img src='{{ ( resources.Get "images/matteo-no-bg.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-purple-500 cover-box sm:inline hidden">
+
+        <div class="w-full bg-red-500 hidden xl:inline"></div>
+        <div class="w-full bg-blue-500"></div>
+    </div>
+
+    <!-- {{ $cover :=  resources.Get "images/cover-wide.jpeg"  }}
+    <img src="{{ $cover.RelPermalink }}" alt="Cover image" 
+         class="w-full h-64 object-cover object-top"> -->
+
+    {{- partial "main-nav.html" -}}
+
+    <div id="content" class="p-4 md:p-0 md:w-8/12 mx-auto">
+
+        <section class="md:mb-10">
+            <div id="chi-siamo" class=""></div>
+            <!-- <h2 class="main-section-title">Chi siamo</h2> -->
+            <p>Commodi earum dolores quam velit sapiente. Sapiente at et esse est est saepe aspernatur ut. Tenetur sint
+                et aut expedita.</p>
+            <p>Dignissimos nemo quas necessitatibus et omnis nulla. Ut tenetur consequatur earum quaerat aut at ad
+                architecto. Voluptatem nihil id aut culpa alias. Accusamus quia nemo alias exercitationem temporibus
+                inventore exercitationem.</p>
+            <p>Provident minima voluptatem esse et enim optio. Minima qui quia ex at beatae voluptas officia corrupti.
+                Esse quia ut possimus adipisci expedita libero aut velit.</p>
+        </section>
+
+        <section class="md:mb-10 md:mt-10">
+            <div id="eventi" class=""></div>
+            <h2 class="main-section-title">Prossimi eventi</h2>
+
+            {{ partial "event-front-b.html" }}
+        </section>
+
+        <div id="contatti" class=""></div>
+        <div class="grid 
+                    gap-x-8 
+                    gap-y-10 
+                    mb-10
+                    mt-8 
+                    md:mt-0 md:grid-cols-2 
+                    ">
+
+            <div class="grid grid-row-1 gap-4 bg-white rounded-lg shadow-lg p-4">
+                <div class="row-span-1 text-xl flex flex-col text-center mt-auto mb-auto text-gray-700">
+                    <span class="">
+                        Vuoi partecipare?
+                        Hai un progetto da proporci?
+                    </span>
+                    <spa>
+                        Scrivici a
+                        <a href="mailto:info@cortepolifonica.it"
+                            class="underline text-gray-900">info@cortepolifonica.it</a>
+                        </span>
+                </div>
+                <div class="row-span-1">
+                    {{ $contactPerson :=  resources.Get "images/matteo.png"  }}
+                    <img src="{{ $contactPerson.RelPermalink }}" alt="Persona di riferimento"
+                        class="w-1/2 md:w-1/5 rounded-full mx-auto">
+                </div>
+            </div>
+
+            <div class="bg-teal-900 p-4 md:pt-8 md:pb-8 rounded-md grid grid-rows-2 gap-4">
+                <div class="text-center">
+                    <p class="text-2xl text-white font-sans font-thin">Vuoi rimanere aggiornato?</p>
+                    <p class="text-xl text-teal-100 font-light">Iscriviti alla nostra mailing list</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="m-1 rounded-md shadow-sm flex-1 w-2/4 text-xl">
+                        <input id="input-email" type="text" placeholder="indirizzo email"
+                            class="form-input block w-full p-2 text-base sm:leading-5 rounded">
+                    </div>
+                    <button class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded font-sans">
+                        Iscriviti!
+                    </button>
+                </div>
+            </div>
+
+        </div> <!-- end contact block -->
+
+    </div>
+
+{{- partial "footer.html" . -}}
+</body>
+
+</html>

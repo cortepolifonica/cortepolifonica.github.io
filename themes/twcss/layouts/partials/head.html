@@ -1,0 +1,67 @@
+<head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}
+        {{ .Site.Title }}
+        {{ end }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    {{ $options := dict "inlineImports" true }}
+    {{ $isProd :=  eq hugo.Environment "production"}}
+    {{ $styles := resources.Get "css/styles.css" }}
+    {{ $styles = $styles | resources.PostCSS $options }}
+    {{ if $isProd }}
+    {{ $styles = $styles | minify | fingerprint }}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+    <script>
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+
+        function reshuffleBoxes() {
+            var boxes = Array.from(document.getElementsByClassName("cover-box"));
+            boxes.map(b => b.classList.add("hidden"));
+            shuffle(boxes);
+            boxes[0].classList.remove("hidden");
+            boxes[1].classList.remove("hidden");
+            boxes[2].classList.remove("hidden");
+            boxes[3].classList.remove("hidden");
+        } 
+
+        window.setInterval(function() {
+            if (screen.availWidth <= 640) {
+                reshuffleBoxes();
+            }
+        }, 5000);
+    </script>
+
+</head>
