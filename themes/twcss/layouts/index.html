@@ -5,18 +5,27 @@
 <body class="font-serif md:w-screen md:mx-auto bg-gray-200">
     <h1 class="pl-2 md:pl-0 text-left text-4xl md:mt-6 md:mb-6 md:w-8/12 md:mx-auto">La Corte Polifonica</h1>
 
-    <div id="cover-boxes" class="flex flex-wrap md:flex-none sm:grid sm:grid-cols-8 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12">
+    <div id="small-cover-boxes" class="flex flex-wrap sm:hidden">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/1.png" ).RelPermalink }}' alt="" class="duration-500 ease-in-out transition-opacity w-1/3 bg-red-500">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/2.png" ).RelPermalink }}' alt="" class="duration-500 ease-in-out transition-opacity w-1/3 bg-blue-500">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/3.png" ).RelPermalink }}' alt="" class="duration-500 ease-in-out transition-opacity w-1/3 bg-green-500">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/4.png" ).RelPermalink }}' alt="" class="duration-500 ease-in-out transition-opacity w-1/3 bg-purple-400">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/5.png" ).RelPermalink }}' alt="" class="duration-500 ease-in-out transition-opacity w-1/3 bg-yellow-400">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/6.png" ).RelPermalink }}' alt="" class="duration-500 ease-in-out transition-opacity w-1/3 bg-teal-500">
+    </div>
+
+    <div id="cover-boxes" class="hidden flex-wrap md:flex-none sm:grid sm:grid-cols-8 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12">
         <div class="md:w-full bg-yellow-500 hidden lg:inline"></div>
         <div class="md:w-full bg-purple-500 hidden xl:inline"></div>
 
-        <img src='{{ ( resources.Get "images/primi-piani/1.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-red-500 cover-box sm:inline transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/2.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-blue-500 cover-box sm:inline transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/3.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-green-500 cover-box sm:inline transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/4.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-purple-400 cover-box sm:inline transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/5.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-yellow-400 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/6.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-teal-500 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/7.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-pink-500 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/11.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-indigo-400 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/1.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-red-500 cover-box sm:inline transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/2.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-blue-500 cover-box sm:inline transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/3.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-green-500 cover-box sm:inline transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/4.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-purple-400 cover-box sm:inline transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/5.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-yellow-400 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/6.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-teal-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/7.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-pink-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/11.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-indigo-400 cover-box sm:inline hidden transition-opacity">
 
         <div class="md:w-full bg-yellow-500 hidden lg:inline"></div>
         <div class="md:w-full bg-purple-500 hidden xl:inline"></div>
@@ -24,14 +33,14 @@
         <div class="md:w-full bg-red-500 hidden xl:inline"></div>
         <div class="md:w-full bg-blue-500 hidden lg:inline"></div>
 
-        <img src='{{ ( resources.Get "images/primi-piani/10.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-green-500 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/8.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-yellow-400 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/12.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-indigo-400 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/13.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-red-500 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/14.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-teal-500 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/15.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-blue-500 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/19.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-pink-500 cover-box sm:inline hidden transition-opacity">
-        <img src='{{ ( resources.Get "images/primi-piani/20.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-purple-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/10.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-green-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/8.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-pink-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/12.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-indigo-400 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/13.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-red-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/14.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-teal-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/15.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-blue-500 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/19.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-yellow-400 cover-box sm:inline hidden transition-opacity">
+        <img src='{{ ( resources.Get "images/primi-piani/thumbs/20.png" ).RelPermalink }}' alt="" class="w-1/2 sm:w-full bg-purple-500 cover-box sm:inline hidden transition-opacity">
 
         <div class="w-full bg-red-500 hidden xl:inline"></div>
         <div class="w-full bg-blue-500"></div>
@@ -86,9 +95,9 @@
                         </span>
                 </div>
                 <div class="row-span-1">
-                    {{ $contactPerson :=  resources.Get "images/matteo.png"  }}
+                    {{ $contactPerson :=  resources.Get "images/primi-piani/thumbs/8.png"  }}
                     <img src="{{ $contactPerson.RelPermalink }}" alt="Persona di riferimento"
-                        class="w-1/2 md:w-1/5 rounded-full mx-auto">
+                        class="w-1/2 md:w-1/5 rounded-full mx-auto bg-teal-500">
                 </div>
             </div>
 
@@ -111,6 +120,45 @@
         </div> <!-- end contact block -->
 
     </div>
+
+    <script>
+        var images = [
+            '{{ ( resources.Get "images/primi-piani/thumbs/1.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/2.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/3.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/4.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/5.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/6.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/7.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/8.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/10.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/11.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/12.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/13.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/14.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/15.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/19.png" ).RelPermalink }}',
+            '{{ ( resources.Get "images/primi-piani/thumbs/20.png" ).RelPermalink }}'
+        ];
+
+        var boxes = Array.from(document.querySelector("#small-cover-boxes").children);
+
+        window.setInterval(function() {
+            if (screen.availWidth <= 640) {
+                var currentImages = boxes.map(b => basename(b.src));
+                console.log(currentImages);
+                var j = Math.floor(Math.random() * images.length);
+                while (currentImages.indexOf(basename(images[j])) > -1) {
+                    j = Math.floor(Math.random() * images.length);
+                }
+                var i = Math.floor(Math.random() * boxes.length);
+                console.log("setting image of " + i + " to " + j);
+                // boxes[i].style.opacity = "0";
+                boxes[i].src = images[j];
+                // boxes[i].style.opacity = "1";
+            }
+        }, 2000);
+    </script>
 
 {{- partial "footer.html" . -}}
 </body>

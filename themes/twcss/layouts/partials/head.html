@@ -47,21 +47,14 @@
             return array;
         }
 
-        function reshuffleBoxes() {
-            var boxes = Array.from(document.getElementsByClassName("cover-box"));
-            boxes.map(b => b.classList.add("hidden"));
-            shuffle(boxes);
-            boxes[0].classList.remove("hidden");
-            boxes[1].classList.remove("hidden");
-            boxes[2].classList.remove("hidden");
-            boxes[3].classList.remove("hidden");
-        } 
-
-        window.setInterval(function() {
-            if (screen.availWidth <= 640) {
-                reshuffleBoxes();
-            }
-        }, 5000);
+        function basename(str)
+        {
+            var base = new String(str).substring(str.lastIndexOf('/') + 1); 
+                if(base.lastIndexOf(".") != -1) {
+                    base = base.substring(0, base.lastIndexOf("."));
+                }
+            return base;
+        }
     </script>
 
 </head>
