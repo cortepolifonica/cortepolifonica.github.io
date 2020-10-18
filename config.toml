@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://cortepolifonica.github.io"
 languageCode = "en-us"
 title = "La Corte Polifonica"
 theme = "twcss"
