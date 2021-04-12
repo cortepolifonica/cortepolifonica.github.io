@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="49.117462mm"
+   height="11.476044mm"
+   viewBox="0 0 49.117462 11.476044"
+   version="1.1"
+   id="svg107"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
+   sodipodi:docname="corte-polifonica-text.svg"
+   inkscape:export-filename="/Users/matteoceccarello/Leisure/CortePolifonica/assets/images/corte-polifonica-text.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs101">
+    <rect
+       x="56.69643"
+       y="108.10119"
+       width="102.80953"
+       height="15.119049"
+       id="rect111" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.57638187"
+     inkscape:cx="81.087522"
+     inkscape:cy="73.735851"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer3"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1398"
+     inkscape:window-height="855"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata104">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-83.545593,-128.99072)">
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+       id="rect964"
+       width="49.117462"
+       height="11.476044"
+       x="83.545593"
+       y="128.99072" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Livello 2"
+     transform="translate(-83.545593,-128.99072)">
+    <text
+       xml:space="preserve"
+       id="text109"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329999999999949px;line-height:1.25;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect111);opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="40.664055"
+       y="0"
+       transform="translate(-0.28404101,20.247738)"><tspan
+         x="83.855058"
+         y="116.37753"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Corte Polifonica</tspan></tspan></text>
+  </g>
+</svg>

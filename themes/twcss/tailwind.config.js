@@ -1,7 +1,14 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        cpblue: "#78ddff",
+        cpred: "#d43131",
+        cpgreen: "#4ac251",
+        cpyellow: "#ffb417"
+      }
+    },
     fontFamily: {}
   },
   variants: {},
