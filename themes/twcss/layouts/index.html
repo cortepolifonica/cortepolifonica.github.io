@@ -2,7 +2,7 @@
 <html>
 {{- partial "head.html" . -}}
 
-<body class="font-serif bg-gray-200 md:w-screen md:mx-auto">
+<body class="font-sans bg-gray-200 md:w-screen md:mx-auto">
 
     <div class="w-full h-24 pt-4 pb-4 bg-black">
         <img class="h-20 mx-auto" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
@@ -39,32 +39,67 @@
     </div>
     <div class="w-full h-2 bg-black"></div>
 
-    <!-- {{ $cover :=  resources.Get "images/cover-wide.jpeg"  }}
-    <img src="{{ $cover.RelPermalink }}" alt="Cover image" 
-         class="object-cover object-top w-full h-64"> -->
+    {{/* - partial "main-nav.html" - */}}
 
-    {{- partial "main-nav.html" -}}
+    <div id="content" class="p-4 mx-auto mt-10 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
 
-    <div id="content" class="p-4 mx-auto md:p-0 md:w-8/12">
-
-        <section class="md:mb-10">
+        <section class="md:mb-10 text-xl text-center">
             <div id="chi-siamo" class=""></div>
-            <!-- <h2 class="main-section-title">Chi siamo</h2> -->
-            <p>Commodi earum dolores quam velit sapiente. Sapiente at et esse est est saepe aspernatur ut. Tenetur sint
-                et aut expedita.</p>
-            <p>Dignissimos nemo quas necessitatibus et omnis nulla. Ut tenetur consequatur earum quaerat aut at ad
-                architecto. Voluptatem nihil id aut culpa alias. Accusamus quia nemo alias exercitationem temporibus
-                inventore exercitationem.</p>
-            <p>Provident minima voluptatem esse et enim optio. Minima qui quia ex at beatae voluptas officia corrupti.
-                Esse quia ut possimus adipisci expedita libero aut velit.</p>
+            <p class="mt-4">
+            Il luogo di ritrovo del coro, la corte di casa, dà il nome a questo
+            gruppo, nato soprattutto dalla volontà di ritrovarsi e di farsi
+            ascoltare, dopo mesi di forzato silenzio.
+            </p>
+            <p class="mt-4">
+            Di recentissima formazione l’ensemble, formato da musicisti di
+            varia provenienza e di grande esperienza, ha iniziato a lavorare
+            nel giugno 2020 all’interno dell’associazione musicale Diapason.
+            </p>
+            <p class="mt-4">
+            È diretto dal maestro Martina Frigo e si prefigge di lavorare su un
+            repertorio romantico e moderno, con attenzione alla
+            contemporaneità.
+            </p>
         </section>
 
-        <section class="md:mb-10 md:mt-10">
-            <div id="eventi" class=""></div>
-            <h2 class="main-section-title">Prossimi eventi</h2>
+        <section class="mt-10 p-4 bg-white rounded-lg shadow-lg md:mb-10">
+            <div class="p-4">
+                <h1 class="text-2xl text-gray-700">La direttrice</h1>
+                <img class="float-right w-1/2 m-8 rounded-full"
+                    src='{{ ( resources.Get "images/Martina-dirige-crop.jpg").RelPermalink }}' />
+                <p class="mt-3 text-justify">
+                    <span class="text-teal-900">Martina Frigo</span> ha studiato pianoforte con i maestri Ruffin
+                    Armellini, Rigon e
+                    Chemin, diplomandosi con il massimo dei voti in pianoforte nel 2011 e
+                    in musica da camera nel 2017. Ha partecipato a numerosi masterclass
+                    pianistici con maestri di fama internazionale: Enrico Pace, Alberto
+                    Nosè, Marian Mika, Lilya Zilberstein e Simone Soldati. È stata
+                    vincitrice della borsa di studio regionale per l'accompagnamento
+                    pianistico presso il Conservatorio C. Pollini, nel 2013 e 2014, del
+                    secondo premio al Concorso Internazionale Giovani Pianisti 2013 di
+                    Legnago e di premi in concorsi nazionali ed internazionali.
+                </p>
 
-            {{ partial "event-front-b.html" }}
+                <p class="mt-3 text-justify">
+                    Ha studiato canto con il soprano Takako Okazaki e il soprano Tatiana
+                    Aguiar, perfezionandosi nelle tecniche di vocalità e di direzione
+                    corale nel biennio dell'accademia di direzione corale Righele
+                    dell'ASAC.
+
+                    Partecipa come maestro collaboratore o come corista a
+                    molte realtà corali padovani. Ha fondato e diretto per alcuni anni
+                    l'ensemble “Corymbus” di Padova, ha diretto il coro
+                    "Nova Symphonia Patavina" e il coro studentesco del Liceo Scalcerle.
+                </p>
+            </div>
         </section>
+
+        <!-- <section class="md:mb-10 md:mt-10"> -->
+        <!--     <div id="eventi" class=""></div> -->
+        <!--     <h2 class="main-section-title">Prossimi eventi</h2> -->
+
+        <!--     {{/* partial "event-front-b.html" */}} -->
+        <!-- </section> -->
 
         <div id="contatti" class=""></div>
         <div class="grid mt-8 mb-10 gap-x-8 gap-y-10 md:mt-0 md:grid-cols-2 ">
