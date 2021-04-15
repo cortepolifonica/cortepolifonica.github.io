@@ -1,5 +1,6 @@
 module.exports = {
-  purge: [],
+  purge: ['layouts/**/*.html'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -9,14 +10,9 @@ module.exports = {
         cpyellow: "#ffb417"
       }
     },
-    fontFamily: {}
   },
-  variants: {},
+  variants: {
+    extend: {},
+  },
   plugins: [],
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-    defaultLineHeights: true,
-    standardFontWeights: true,
-  },
 }

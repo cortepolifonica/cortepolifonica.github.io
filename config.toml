@@ -1,4 +1,3 @@
 baseURL = "https://cecca.github.io/cortepolifonica/"
-languageCode = "en-us"
+languageCode = "it-IT"
 title = "La Corte Polifonica"
-theme = "twcss"
