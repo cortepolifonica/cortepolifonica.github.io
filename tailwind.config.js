@@ -6,11 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cpblue: "#78ddff",
-        cpred: "#d43131",
-        cpgreen: "#4ac251",
-        cpyellow: "#ffb417",
-        headerblack: "#000000",
+        cpblue: "#7DD3FC",
+        cpred: "#EF4444",
+        cporange: "#F97316",
+        cpgreen: "#10B981",
+        cpyellow: "#FACC15",
+        cpamber: "#F59E0B",
+        cppurple: "#C084FC",
         teal: colors.teal,
         orange: colors.orange
       },
