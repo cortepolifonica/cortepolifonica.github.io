@@ -14,7 +14,8 @@ module.exports = {
         cpamber: "#F59E0B",
         cppurple: "#C084FC",
         teal: colors.teal,
-        orange: colors.orange
+        orange: colors.orange,
+        cyan: colors.cyan
       },
     },
     fontFamily: {
