@@ -10,6 +10,7 @@ module.exports = {
         cpred: "#d43131",
         cpgreen: "#4ac251",
         cpyellow: "#ffb417",
+        headerblack: "#000000",
         teal: colors.teal,
         orange: colors.orange
       },
