@@ -1,4 +1,4 @@
-<div class="p-4 text-teal-100 bg-teal-900">
+<div class="p-4 text-teal-100 bg-teal-900 ">
     <div class="flex flex-col md:w-8/12 md:mx-auto">
         <span color="text-teal-300">Copyright 2020 &copy;</span>
         <span>Associazione Culturale Diapason</span>
@@ -9,6 +9,9 @@
     const splash = document.getElementById("splash");
     const logo = document.getElementById("navlogo");
     const navbar = document.getElementById("navbar");
+    const content = document.getElementById("content");
+    const filler = document.getElementById("splash-filler");
+    const dark = document.body.style.backgroundColor;
 
     window.addEventListener("scroll", function (ev) {
         let thresh = splash.clientHeight;
@@ -19,13 +22,58 @@
                 logo.classList.remove("hidden");
                 logo.style.animation = "fadeIn 1000ms ease-in forwards";
                 navbar.style.justifyContent = "space-between";
+                // document.body.style.backgroundColor = "#FAFAF9";
             }
         } else {
             if (scrolled) {
                 logo.classList.add("hidden");
                 logo.classList.remove("flex");
                 navbar.style.justifyContent = "center";
+                document.body.style.backgroundColor = "#1C1917";
             }
         }
     });
+
+    window.addEventListener("scroll", function (ev) {
+        const light = "#F5F5F4";
+        // const light = "#FAFAF9";
+        const threshold = splash.clientHeight + navbar.clientHeight;
+        if (document.documentElement.scrollTop > threshold || document.body.scrollTop > threshold) {
+            document.body.style.backgroundColor = light;
+        } else {
+            document.body.style.backgroundColor = dark;
+        }
+    });
+
+    window.addEventListener("scroll", function (ev) {
+        const invisible = content.classList.contains("hidden");
+        if (document.documentElement.scrollTop > 3 || document.body.scrollTop > 3) {
+            if (invisible) {
+                content.classList.remove("hidden");
+                filler.classList.add("hidden");
+                content.style.opacity = 1;
+                content.style.animation = "fadeIn 1000ms ease-in forwards";
+                // content.style.transition = "opacity 1s ease-in";
+            }
+        } else {
+            if (!invisible) {
+                content.classList.add("hidden");
+                filler.classList.remove("hidden");
+                content.style.opacity = 0;
+                content.style.animation = "fadeIn 1000ms ease-in forwards";
+                // content.style.transition = "visibility 0s 1s, opacity 1s ease-in";
+            }
+        }
+    });
+</script>
+
+<script>
+    function setupFiller() {
+        const h = document.getElementById("splash").clientHeight + document.getElementById("navbar").clientHeight + document.getElementById("punchline").clientHeight;
+        const fillh = window.innerHeight - h;
+        console.log(fillh);
+        document.getElementById("splash-filler").style.height = fillh + "px";
+    }
+
+    setupFiller()
 </script>

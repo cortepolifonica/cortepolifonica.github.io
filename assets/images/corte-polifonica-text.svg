@@ -33,9 +33,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.57638187"
-     inkscape:cx="81.087522"
-     inkscape:cy="73.735851"
+     inkscape:zoom="1.2380462"
+     inkscape:cx="112.64597"
+     inkscape:cy="71.189705"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
@@ -57,7 +57,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,15 +65,7 @@
      inkscape:label="Livello 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-83.545593,-128.99072)">
-    <rect
-       style="opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583"
-       id="rect964"
-       width="49.117462"
-       height="11.476044"
-       x="83.545593"
-       y="128.99072" />
-  </g>
+     transform="translate(-83.545593,-128.99072)" />
   <g
      inkscape:groupmode="layer"
      id="layer3"
@@ -82,10 +74,12 @@
     <text
        xml:space="preserve"
        id="text109"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329999999999949px;line-height:1.25;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect111);opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329999999999949px;line-height:1.25;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;white-space:pre;shape-inside:url(#rect111);opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;"
        x="40.664055"
        y="0"
-       transform="translate(-0.28404101,20.247738)"><tspan
+       transform="translate(-0.28404101,20.247738)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          x="83.855058"
          y="116.37753"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:'French Script MT';-inkscape-font-specification:'French Script MT, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1">Corte Polifonica</tspan></tspan></text>

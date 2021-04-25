@@ -1,17 +1,19 @@
-<nav id="navbar"
-  class="sticky top-0 z-50 flex flex-col text-2xl font-light text-center text-gray-100 border-gray-500 bg-backblack md:flex-row md:flex-no-wrap md:space-x-3 md:justify-center md:w-full md:text-center md:pl-4 md:pr-4">
-  <div id="navlogo" class="flex-row hidden space-x-3">
-    <img class="h-16 mt-1 mb-1" src='{{ ( resources.Get "images/logo-corte-polifonica.png" ).RelPermalink }}'></img>
-    <img class="h-16 mt-1 mb-1" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
-      alt="Corte Polifonica" />
-  </div>
-  <div id='nav-links' class="pt-5 pb-5">
-    <a href="#eventi">Eventi</a>
-    <span class="hidden md:inline">&middot;</span>
-    <a href="#contatti">Contatti</a>
-    <span class="hidden md:inline">&middot;</span>
-    <a href="https://cecca.github.io/repertorio-coro">Area riservata</a>
-    <span class="hidden md:inline">&middot;</span>
-    <a href="https://fabrisd.github.io/apsdiapason">Diapason</a>
-  </div>
-</nav>
+<div class="sticky top-0 z-50 pt-2 bg-backblack md:w-full">
+  <nav id="navbar"
+    class="flex flex-col text-2xl text-center text-gray-100 border-gray-500 font-extralight bg-backblack md:flex-row md:flex-no-wrap md:space-x-3 md:justify-center md:w-8/12 md:mx-auto md:text-center md:pl-4 md:pr-4">
+    <div id="navlogo" class="flex-row hidden space-x-3">
+      <img class="h-16 mt-1 mb-1" src='{{ ( resources.Get "images/logo-corte-polifonica.png" ).RelPermalink }}'></img>
+      <img class="h-12 mt-5 mb-5" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
+        alt="Corte Polifonica" />
+    </div>
+    <div id='nav-links' class="pt-5 pb-5 mt-2">
+      <a href="#eventi">Eventi</a>
+      <span class="hidden md:inline">&middot;</span>
+      <a href="#contatti">Contatti</a>
+      <span class="hidden md:inline">&middot;</span>
+      <a href="https://cecca.github.io/repertorio-coro">Area riservata</a>
+      <span class="hidden md:inline">&middot;</span>
+      <a href="https://fabrisd.github.io/apsdiapason">Diapason</a>
+    </div>
+  </nav>
+</div>

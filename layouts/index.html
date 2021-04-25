@@ -2,13 +2,13 @@
 <html>
 {{- partial "head.html" . -}}
 
-<body class="font-serif bg-backblack md:w-screen md:mx-auto">
+<body class="font-serif transition-colors duration-700 bg-backblack md:w-screen md:mx-auto">
     <!-- <body class="font-serif bg-gray-200 md:w-screen md:mx-auto"> -->
 
     <div id="splash">
         <div class="w-full h-24 pt-4 pb-4 bg-backblack">
-            <img class="h-20 mx-auto" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
-                alt="Corte Polifonica" />
+            <img class="h-16 mx-auto mt-2 mb-2"
+                src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}' alt="Corte Polifonica" />
         </div>
         <div id="cover-boxes" class=" sm:grid sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
 
@@ -42,15 +42,15 @@
 
     {{- partial "main-nav.html" -}}
 
+    <section id="punchline" class="mt-10 mb-20 text-3xl text-center text-gray-600">
+        <p class="mt-4 text-teal-700">
+            La Corte Polifonica è appena nata,<br /> ma abbiamo grandi cose in mente!
+        </p>
+    </section>
 
-    <div id="content" class="p-4 mx-auto mt-10 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
+    <div id="splash-filler"></div>
 
-        <section class="mt-10 mb-20 text-3xl text-center text-gray-600">
-            <p class="mt-4 text-teal-700">
-                La Corte Polifonica è appena nata,<br /> ma abbiamo grandi cose in mente!
-            </p>
-        </section>
-
+    <div id="content" class="hidden p-4 mx-auto mt-10 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
         <section class="mt-10 font-sans bg-gray-100 rounded-lg shadow-lg md:mb-10">
             <h1 id="chi-siamo" class="p-8 font-serif text-3xl text-gray-700">Il coro</h1>
             <img class="w-full shadow-2xl filter grayscale"
