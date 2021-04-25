@@ -4,3 +4,28 @@
         <span>Associazione Culturale Diapason</span>
     </div>
 </div>
+
+<script>
+    const splash = document.getElementById("splash");
+    const logo = document.getElementById("navlogo");
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function (ev) {
+        let thresh = splash.clientHeight;
+        let scrolled = !logo.classList.contains("hidden");
+        if (document.documentElement.scrollTop > thresh || document.body.scrollTop > thresh) {
+            if (!scrolled) {
+                logo.classList.add("flex");
+                logo.classList.remove("hidden");
+                logo.style.animation = "fadeIn 1000ms ease-in forwards";
+                navbar.style.justifyContent = "space-between";
+            }
+        } else {
+            if (scrolled) {
+                logo.classList.add("hidden");
+                logo.classList.remove("flex");
+                navbar.style.justifyContent = "center";
+            }
+        }
+    });
+</script>

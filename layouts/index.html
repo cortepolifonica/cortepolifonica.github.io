@@ -2,45 +2,46 @@
 <html>
 {{- partial "head.html" . -}}
 
-<body class="font-serif bg-black md:w-screen md:mx-auto">
+<body class="font-serif bg-backblack md:w-screen md:mx-auto">
     <!-- <body class="font-serif bg-gray-200 md:w-screen md:mx-auto"> -->
 
-    <div class="w-full h-24 pt-4 pb-4 bg-headerblack">
-        <img class="h-20 mx-auto" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
-            alt="Corte Polifonica" />
+    <div id="splash">
+        <div class="w-full h-24 pt-4 pb-4 bg-backblack">
+            <img class="h-20 mx-auto" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
+                alt="Corte Polifonica" />
+        </div>
+        <div id="cover-boxes" class=" sm:grid sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
+
+            <div class="grid sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
+                <div class="hidden lg:block bg-cpamber"></div>
+                <div class="hidden md:block bg-cpgreen"></div>
+                {{ partial "photo-box.html" (dict "img" "Matteo2.png" "bg" "bg-cpblue") }}
+                {{ partial "photo-box.html" (dict "img" "Lucia5.png" "bg" "bg-cpyellow") }}
+                <div class="hidden lg:block bg-cpyellow"></div>
+                <div class="hidden md:block bg-cporange"></div>
+                {{ partial "photo-box.html" (dict "img" "Gioia1.png" "bg" "bg-cpgreen") }}
+                {{ partial "photo-box.html" (dict "img" "Laura1.png" "bg" "bg-cporange") }}
+            </div>
+            <div class="col-span-2">
+                <img class="sm:w-full sm:col-span-2" src='{{ ( resources.Get "images/logo-banner.svg" ).RelPermalink }}'
+                    alt="" />
+            </div>
+            <div class="grid sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
+                {{ partial "photo-box.html" (dict "img" "Gianni1.png" "bg" "bg-cpamber") }}
+                {{ partial "photo-box.html" (dict "img" "Davide1.png" "bg" "bg-cpblue") }}
+                <div class="hidden md:block bg-cpamber"></div>
+                <div class="hidden lg:block bg-cpblue"></div>
+                {{ partial "photo-box.html" (dict "img" "Giovanna1.png" "bg" "bg-cpyellow") }}
+                {{ partial "photo-box.html" (dict "img" "Chiara1.png" "bg" "bg-cpgreen") }}
+                <div class="hidden md:block bg-cporange"></div>
+                <div class="hidden lg:block bg-cpyellow"></div>
+            </div>
+        </div>
+        <div class="w-full h-2 bg-backblack"></div>
     </div>
-
-    <div id="cover-boxes" class=" sm:grid sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
-
-        <div class="grid sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
-            <div class="hidden lg:block bg-cpamber"></div>
-            <div class="hidden md:block bg-cpgreen"></div>
-            {{ partial "photo-box.html" (dict "img" "Matteo2.png" "bg" "bg-cpblue") }}
-            {{ partial "photo-box.html" (dict "img" "Lucia5.png" "bg" "bg-cpyellow") }}
-            <div class="hidden lg:block bg-cpyellow"></div>
-            <div class="hidden md:block bg-cporange"></div>
-            {{ partial "photo-box.html" (dict "img" "Gioia1.png" "bg" "bg-cpgreen") }}
-            {{ partial "photo-box.html" (dict "img" "Laura1.png" "bg" "bg-cporange") }}
-        </div>
-        <div class="col-span-2">
-            <img class="sm:w-full sm:col-span-2" src='{{ ( resources.Get "images/logo-banner.svg" ).RelPermalink }}'
-                alt="" />
-        </div>
-        <div class="grid sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
-            {{ partial "photo-box.html" (dict "img" "Gianni1.png" "bg" "bg-cpamber") }}
-            {{ partial "photo-box.html" (dict "img" "Davide1.png" "bg" "bg-cpblue") }}
-            <div class="hidden md:block bg-cpamber"></div>
-            <div class="hidden lg:block bg-cpblue"></div>
-            {{ partial "photo-box.html" (dict "img" "Giovanna1.png" "bg" "bg-cpyellow") }}
-            {{ partial "photo-box.html" (dict "img" "Chiara1.png" "bg" "bg-cpgreen") }}
-            <div class="hidden md:block bg-cporange"></div>
-            <div class="hidden lg:block bg-cpyellow"></div>
-        </div>
-
-    </div>
-    <div class="w-full h-2 bg-black"></div>
 
     {{- partial "main-nav.html" -}}
+
 
     <div id="content" class="p-4 mx-auto mt-10 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
 

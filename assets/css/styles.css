@@ -13,7 +13,6 @@
     height: 0
 }
 
-.bg-cp-blue { background-color: "#78ddff"; }
-.bg-cp-red { background-color: "#d43131"; }
-.bg-cp-green { background-color: "#4ac251"; }
-.bg-cp-yellow { background-color: "#ffb417"; }
+#nav-links > a {
+    @apply ml-2 mr-2
+}

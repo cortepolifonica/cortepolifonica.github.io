@@ -1,12 +1,17 @@
-<nav
-  class="sticky top-0 z-50 flex flex-col text-2xl font-light text-center text-gray-100 bg-black border-gray-500 md:flex-row md:flex-no-wrap md:space-x-3 md:justify-center md:w-full md:pb-5 md:pt-5 md:text-center ">
-  <a href="#chi-siamo">A proposito di noi</a>
-  <span class="hidden md:inline">&middot;</span>
-  <a href="#eventi">Eventi</a>
-  <span class="hidden md:inline">&middot;</span>
-  <a href="#contatti">Contatti</a>
-  <span class="hidden md:inline">&middot;</span>
-  <a href="https://cecca.github.io/repertorio-coro">Area riservata</a>
-  <span class="hidden md:inline">&middot;</span>
-  <a href="https://fabrisd.github.io/apsdiapason">Diapason</a>
+<nav id="navbar"
+  class="sticky top-0 z-50 flex flex-col text-2xl font-light text-center text-gray-100 border-gray-500 bg-backblack md:flex-row md:flex-no-wrap md:space-x-3 md:justify-center md:w-full md:text-center md:pl-4 md:pr-4">
+  <div id="navlogo" class="flex-row hidden space-x-3">
+    <img class="h-16 mt-1 mb-1" src='{{ ( resources.Get "images/logo-corte-polifonica.png" ).RelPermalink }}'></img>
+    <img class="h-16 mt-1 mb-1" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
+      alt="Corte Polifonica" />
+  </div>
+  <div id='nav-links' class="pt-5 pb-5">
+    <a href="#eventi">Eventi</a>
+    <span class="hidden md:inline">&middot;</span>
+    <a href="#contatti">Contatti</a>
+    <span class="hidden md:inline">&middot;</span>
+    <a href="https://cecca.github.io/repertorio-coro">Area riservata</a>
+    <span class="hidden md:inline">&middot;</span>
+    <a href="https://fabrisd.github.io/apsdiapason">Diapason</a>
+  </div>
 </nav>
