@@ -75,5 +75,53 @@
         document.getElementById("splash-filler").style.height = fillh + "px";
     }
 
-    setupFiller()
+    setupFiller();
+    window.addEventListener("scroll", function (ev) {
+        setupFiller();
+    });
+</script>
+
+<script>
+    const pics = [
+        "Chiara1.png",
+        "Davide1.png",
+        "Gianni1.png",
+        "Gioia1.png",
+        "Giovanna1.png",
+        "Laura1.png",
+        "Lucia1.png",
+        "Lucia2.png",
+        "Lucia3.png",
+        "Lucia4.png",
+        "Lucia5.png",
+        "Matteo1.png",
+        "Matteo10.png",
+        "Matteo11.png",
+        "Matteo12.png",
+        "Matteo13.png",
+        "Matteo14.png",
+        "Matteo15.png",
+        "Matteo19.png",
+        "Matteo2.png",
+        "Matteo20.png",
+        "Matteo3.png",
+        "Matteo4.png",
+        "Matteo5.png",
+        "Matteo6.png",
+        "Matteo7.png",
+        "Matteo8.png"
+    ];
+    function fullname(pic) {
+        return "/cortepolifonica/images/primi-piani/" + pic;
+    }
+
+    function shuffleImages() {
+        const imgs = document.querySelectorAll(".face-thumb");
+        const imgIdx = Math.floor(Math.random() * imgs.length);
+        const picIdx = Math.floor(Math.random() * pics.length);
+
+        imgs[imgIdx].src = fullname(pics[picIdx]);
+    }
+
+    //window.setInterval(shuffleImages, 1500);
 </script>
