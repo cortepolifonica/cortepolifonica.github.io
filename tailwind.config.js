@@ -7,16 +7,22 @@ module.exports = {
     extend: {
       // https://digitalsynopsis.com/design/beautiful-color-gradient-palettes/ la numero 11
       colors: {
-        tborange: "#f28e2b",
-        tbred: "#e15759",
-        tbblue: "#76b7b2",
-        tbyellow: "#edc948",
-        tbgreen: "#adb828",
-        cpblue1: "#35bbca",
-        cpblue2: "#0191b4",
-        cpyellow: "#f8d90f",
-        cpgreen: "#d3dd18",
-        cpred: "#fe7a15",
+        cpred: "#f94144",
+        cporange: "#f3722c",
+        cplightorange: "#f8961e",
+        cpyellow: "#f8bf3a",
+        cpgreen: "#90be6d",
+        cpblue: "#43aa8b",
+        // tborange: "#f28e2b",
+        // tbred: "#e15759",
+        // tbblue: "#76b7b2",
+        // tbyellow: "#edc948",
+        // tbgreen: "#adb828",
+        // cpblue1: "#35bbca",
+        // cpblue2: "#0191b4",
+        // cpyellow: "#f8d90f",
+        // cpgreen: "#d3dd18",
+        // cpred: "#fe7a15",
         // cpblue: "#7DD3FC",
         // cpred: "#EF4444",
         // cporange: "#F97316",
@@ -32,7 +38,7 @@ module.exports = {
         cyan: colors.cyan
       },
       animation: {
-        fadeIn: "fadeIn 2s ease-in forwards"
+        fadeIn: "fadeIn 1s ease-in forwards"
       },
       variants: {
         animation: ["motion-safe"]
