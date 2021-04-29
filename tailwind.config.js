@@ -7,12 +7,12 @@ module.exports = {
     extend: {
       // https://digitalsynopsis.com/design/beautiful-color-gradient-palettes/ la numero 11
       colors: {
-        c1: "#048ba8",
-        c2: "#0db39e",
-        c3: "#83e377",
-        c4: "#efea5a",
-        c5: "#f1c453",
-        c6: "#f29e4c",
+        c1: "#EBC931",
+        c2: "#27C456", // verde
+        c3: "#EB8F26",
+        c4: "#5DBBF0",
+        c5: "#F0654D",
+        c6: "#4CE0BE",
         // cpred: "#f94144",
         // cporange: "#f3722c",
         // cplightorange: "#f8961e",
