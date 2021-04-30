@@ -6,18 +6,18 @@
     <!-- <body class="font-serif bg-gray-200 md:w-screen md:mx-auto"> -->
 
     <div id="splash">
-        <div class="w-full h-24 pt-4 pb-4 bg-backblack">
+        <div class="w-full h-24 pt-4 pb-4 mb-2 bg-backblack">
             <img class="h-16 mx-auto mt-2 mb-2"
                 src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}' alt="Corte Polifonica" />
         </div>
-        <div id="cover-boxes" class=" sm:grid sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
-
-            <div class="grid sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
-                <div class="hidden lg:block bg-c1"></div>
+        <div id="cover-boxes" class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
+            <div
+                class="grid grid-cols-2 col-span-1 sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
+                <div class="lg:block bg-c1"></div>
                 {{ partial "photo-box.html" (dict "img" "Giovanna1.png" "bg" "bg-c2") }}
                 {{ partial "photo-box.html" (dict "img" "Matteo2.png" "bg" "bg-c3") }}
                 {{ partial "photo-box.html" (dict "img" "Lucia5.png" "bg" "bg-c4") }}
-                <div class="hidden lg:block bg-c5"></div>
+                <div class="lg:block bg-c5"></div>
                 {{ partial "photo-box.html" (dict "img" "Martina2.png" "bg" "bg-c6") }}
                 {{ partial "photo-box.html" (dict "img" "Gioia1.png" "bg" "bg-c1") }}
                 {{ partial "photo-box.html" (dict "img" "Laura1.png" "bg" "bg-c2") }}
@@ -26,15 +26,16 @@
                 <img class="sm:w-full sm:col-span-2"
                     src='{{ ( resources.Get "images/logo-banner-2.svg" ).RelPermalink }}' alt="" />
             </div>
-            <div class="grid sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
+            <div
+                class="grid grid-cols-2 col-span-1 sm:col-span-2 sm:grid-cols-2 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
                 {{ partial "photo-box.html" (dict "img" "Gianni1.png" "bg" "bg-c3") }}
                 {{ partial "photo-box.html" (dict "img" "Davide1.png" "bg" "bg-c4") }}
                 {{ partial "photo-box.html" (dict "img" "Martina3.png" "bg" "bg-c5") }}
-                <div class="hidden lg:block bg-c6"></div>
+                <div class="lg:block bg-c6"></div>
                 {{ partial "photo-box.html" (dict "img" "Martina1.png" "bg" "bg-c1") }}
                 {{ partial "photo-box.html" (dict "img" "Chiara1.png" "bg" "bg-c2") }}
                 {{ partial "photo-box.html" (dict "img" "Martina4.png" "bg" "bg-c3") }}
-                <div class="hidden lg:block bg-c4"></div>
+                <div class="lg:block bg-c4"></div>
             </div>
         </div>
         <div class="w-full h-2 bg-backblack"></div>
