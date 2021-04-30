@@ -1,12 +1,21 @@
 <div class="sticky top-0 z-50 pt-2 bg-backblack md:w-full">
   <nav id="navbar"
     class="flex flex-col text-2xl text-center text-gray-100 border-gray-500 font-extralight bg-backblack md:flex-row md:flex-no-wrap md:space-x-3 md:justify-center md:w-8/12 md:mx-auto md:text-center md:pl-4 md:pr-4">
-    <div id="navlogo" class="flex-row hidden space-x-3">
+    <div id="navlogo" class="flex-row justify-between hidden md:space-x-3">
       <img class="h-16 mt-1 mb-1" src='{{ ( resources.Get "images/logo-corte-polifonica.png" ).RelPermalink }}'></img>
       <img class="h-12 mt-5 mb-5" src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}'
         alt="Corte Polifonica" />
+      <div class="block my-auto ml-3 mr-3 sm:hidden">
+        <button class="flex items-center px-3 py-2 text-gray-200 " onclick="toggleNavbar()">
+          <!-- <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Noun_project_-_Music_notes.svg"> -->
+          <svg class="w-8 h-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
     </div>
-    <div id='nav-links' class="pt-5 pb-5 mt-2">
+    <div id='nav-links' class="z-50 flex-col justify-center hidden pt-5 pb-5 mt-2 sm:flex-row sm:z-0">
       <a href="#eventi">Eventi</a>
       <span class="hidden md:inline">&middot;</span>
       <a href="#contatti">Contatti</a>

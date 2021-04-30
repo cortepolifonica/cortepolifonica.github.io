@@ -76,7 +76,8 @@
     }
 
     setupFiller();
-    window.addEventListener("scroll", function (ev) {
+    window.addEventListener("resize", function (ev) {
+        console.log("setting up filler");
         setupFiller();
     });
 </script>
@@ -124,4 +125,16 @@
     }
 
     //window.setInterval(shuffleImages, 1500);
+</script>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function toggleNavbar() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
 </script>
