@@ -6,68 +6,21 @@
 </div>
 
 <script>
-    const splash = document.getElementById("splash");
-    const logo = document.getElementById("navlogo");
-    const navbar = document.getElementById("navbar");
-    const content = document.getElementById("content");
-    const filler = document.getElementById("splash-filler");
-    const dark = document.body.style.backgroundColor;
 
-    window.addEventListener("scroll", function (ev) {
-        let thresh = splash.clientHeight;
-        let scrolled = !logo.classList.contains("hidden");
-        if (document.documentElement.scrollTop > thresh || document.body.scrollTop > thresh) {
-            if (!scrolled) {
-                logo.classList.add("flex");
-                logo.classList.remove("hidden");
-                logo.style.animation = "fadeIn 1000ms ease-in forwards";
-                navbar.style.justifyContent = "space-between";
-                // document.body.style.backgroundColor = "#FAFAF9";
-            }
-        } else {
-            if (scrolled) {
-                logo.classList.add("hidden");
-                logo.classList.remove("flex");
-                navbar.style.justifyContent = "center";
-                document.body.style.backgroundColor = "#1C1917";
-            }
-        }
-    });
+    // window.addEventListener("scroll", function (ev) {
+    //     const light = "#F5F5F4";
+    //     // const light = "#FAFAF9";
+    //     const threshold = splash.clientHeight + navbar.clientHeight;
+    //     if (document.documentElement.scrollTop > threshold || document.body.scrollTop > threshold) {
+    //         document.body.style.backgroundColor = light;
+    //     } else {
+    //         document.body.style.backgroundColor = dark;
+    //     }
+    // });
 
-    window.addEventListener("scroll", function (ev) {
-        const light = "#F5F5F4";
-        // const light = "#FAFAF9";
-        const threshold = splash.clientHeight + navbar.clientHeight;
-        if (document.documentElement.scrollTop > threshold || document.body.scrollTop > threshold) {
-            document.body.style.backgroundColor = light;
-        } else {
-            document.body.style.backgroundColor = dark;
-        }
-    });
-
-    window.addEventListener("scroll", function (ev) {
-        const invisible = content.classList.contains("hidden");
-        if (document.documentElement.scrollTop > 3 || document.body.scrollTop > 3) {
-            if (invisible) {
-                content.classList.remove("hidden");
-                filler.classList.add("hidden");
-                content.style.opacity = 1;
-                content.style.animation = "fadeIn 1000ms ease-in forwards";
-                // content.style.transition = "opacity 1s ease-in";
-            }
-        } else {
-            if (!invisible) {
-                content.classList.add("hidden");
-                filler.classList.remove("hidden");
-                content.style.opacity = 0;
-                content.style.animation = "fadeIn 1000ms ease-in forwards";
-                // content.style.transition = "visibility 0s 1s, opacity 1s ease-in";
-            }
-        }
-    });
 </script>
 
-<script>
+<!-- <script>
     function setupFiller() {
         const h = document.getElementById("splash").clientHeight + document.getElementById("navbar").clientHeight + document.getElementById("punchline").clientHeight;
         const fillh = window.innerHeight - h;
@@ -80,7 +33,7 @@
         console.log("setting up filler");
         setupFiller();
     });
-</script>
+</script> -->
 
 <script>
     const pics = [
@@ -137,4 +90,52 @@
             x.style.display = "flex";
         }
     }
+</script>
+
+<script>
+
+    window.addEventListener("load", (event) => {
+        const splash = document.getElementById("splash");
+        const logo = document.getElementById("navlogo");
+        const navbar = document.getElementById("navbar");
+        const content = document.getElementById("content");
+        const filler = document.getElementById("splash-filler");
+        const dark = document.body.style.backgroundColor;
+        const light = "#F5F5F4";
+
+        // Observe the navbar position
+        new IntersectionObserver((entries, observer) => {
+            for (const sentinel of entries) {
+                if (!sentinel.isIntersecting) {
+                    // The the navbar is sticking
+                    logo.classList.add("flex");
+                    logo.classList.remove("hidden");
+                    logo.style.animation = "fadeIn 1000ms ease-in forwards";
+                    navbar.style.justifyContent = "space-between";
+                    document.body.style.backgroundColor = light;
+                } else {
+                    // The navbar is not sticking
+                    logo.classList.add("hidden");
+                    logo.classList.remove("flex");
+                    navbar.style.justifyContent = "center";
+                    document.body.style.backgroundColor = dark
+                    // document.body.style.backgroundColor = "#1C1917";
+                }
+            }
+        })
+            .observe(document.querySelector("#nav-sentinel"));
+
+        // observe the content div
+        new IntersectionObserver((entries, observer) => {
+            for (const sentinel of entries) {
+                if (sentinel.isIntersecting) {
+                    content.style.opacity = 1;
+                    content.style.animation = "fadeIn 1000ms ease-in forwards";
+                } else {
+                    content.style.opacity = 0;
+                }
+            }
+        })
+            .observe(document.querySelector("#content-sentinel"));
+    }, false);
 </script>

@@ -42,17 +42,17 @@
 
     {{- partial "main-nav.html" -}}
 
-    <section id="punchline" class="mt-24 mb-20 text-3xl text-center text-gray-600 sm:mt-10">
-        <p class="mt-4 text-teal-700">
+    <section id="punchline" class="mb-20 text-3xl text-center text-gray-600 align-text-bottom sm:mt-10">
+        <p class="text-teal-700 ">
             La Corte Polifonica è appena nata,<br /> ma abbiamo grandi cose in mente!
         </p>
     </section>
 
 
-    <div id="splash-filler"></div>
-
-    <div id="content" class="hidden p-4 mx-auto mt-10 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
-        <section class="mt-10 font-sans bg-gray-100 rounded-lg shadow-lg md:mb-10">
+    <!-- <div id="splash-filler"></div> -->
+    <div id="content-sentinel" class="absolute z-10 w-full h-2 mt-10 top-full"></div>
+    <div id="content" class="p-4 mx-auto mt-10 opacity-0 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
+        <section id="sec-description" class="mt-10 font-sans bg-gray-100 rounded-lg shadow-lg md:mb-10">
             <h1 id="chi-siamo" class="p-8 font-serif text-3xl text-gray-700">Il coro</h1>
             <img class="w-full shadow-2xl filter grayscale"
                 src='{{ ( resources.Get "images/giardino-crop.jpeg").RelPermalink }}' />
