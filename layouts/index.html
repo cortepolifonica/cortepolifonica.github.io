@@ -53,6 +53,30 @@
     <!-- <div id="splash-filler"></div> -->
     <div id="content-sentinel" class="absolute z-10 w-full h-2 mt-10 top-full"></div>
     <div id="content" class="p-4 mx-auto mt-10 opacity-0 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
+        <section id="sec-next-event" class="mt-10 font-sans bg-gray-100 rounded-lg shadow-lg">
+            <div class="flex flex-row items-center justify-between">
+                <h1 class="pt-8 pl-8 pr-8 font-serif text-5xl text-gray-600">Metamorfosi</h1>
+                <div class="flex flex-col items-end pt-8 pr-8 font-serif text-gray-700">
+                    <div class="text-2xl ">
+                        20 Giugno 2021, ore XXX
+                    </div>
+                    <div class="flex flex-col items-end ml-5 text-xl">
+                        <span>Palazzo Ciccì Coccò</span>
+                        <span>Via degli animali, 999, Padova</span>
+                    </div>
+                </div>
+            </div>
+            <img src='{{ (resources.Get "images/metamorfosi.jpg").RelPermalink }}' alt="Metamorfosi"
+                class="object-cover h-40 mt-4 mb-4" />
+
+            <p class="pt-4 pb-8 pl-8 pr-8 font-serif text-xl text-gray-800">
+                Un viaggio nel tempo e nello spazio che produrrà nel
+                nostro
+                ensemble alcune
+                trasformazioni...alquanto animalesche!</p>
+
+        </section>
+
         <section id="sec-description" class="mt-10 font-sans bg-gray-100 rounded-lg shadow-lg md:mb-10">
             <h1 id="chi-siamo" class="p-8 font-serif text-3xl text-gray-700">Il coro</h1>
             <img class="w-full shadow-2xl filter grayscale"
