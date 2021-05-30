@@ -44,11 +44,30 @@
 
     {{- partial "main-nav.html" -}}
 
-    <section id="punchline" class="mb-20 text-3xl text-center text-gray-600 align-text-bottom sm:mt-10">
+    <section id="punchline"
+        class="flex flex-wrap mt-10 mb-20 text-3xl text-center text-gray-600 align-text-bottom content-evenly">
         <p class="text-teal-700 ">
-            La Corte Polifonica è appena nata,<br /> e abbiamo grandi cose in mente!
+            La Corte Polifonica è appena nata,<br /> abbiamo grandi cose in mente!
         </p>
+
+        <!-- down arrow -->
+        <div class="w-full">
+            <a href="#content">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="960px" height="560px"
+                    viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve"
+                    class="w-20 h-20 mx-auto" id="down-arrow">
+                    <g>
+                        <path d="M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937
+		c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937
+		c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z"
+                            class="text-gray-200 fill-current animate-pulse" />
+                    </g>
+                </svg>
+            </a>
+        </div>
     </section>
+
 
     <!-- <div id="splash-filler"></div> -->
     <div id="content-sentinel" class="absolute z-10 w-full h-2 mt-10 top-full"></div>
@@ -108,8 +127,8 @@
         <section class="p-4 mt-10 font-sans bg-gray-100 rounded-lg shadow-lg md:mb-10">
             <div class="p-4">
                 <h1 class="font-serif text-3xl text-gray-700">La direttrice</h1>
-                <img class="float-right w-1/2 m-8 rounded-full"
-                    src='{{ ( resources.Get "images/Martina-pianoforte.jpg").RelPermalink }}' />
+                <img class="float-none w-full m-8 mx-auto rounded-full sm:w-1/2 sm:mx-0 sm:float-right"
+                    src='{{ ( resources.Get "images/Martina-dirige-crop.jpg").RelPermalink }}' />
                 <p class="mt-3 text-left">
                     <span class="text-teal-900">Martina Frigo</span> ha studiato pianoforte con i maestri Ruffin
                     Armellini, Rigon e
@@ -155,8 +174,8 @@
                     </span>
                     <spa>
                         Scrivici a
-                        <a href="mailto:cortepolifonica@gmail.com"
-                            class="text-gray-900 underline">info@cortepolifonica.it</a>
+                        <a href="mailto:aps.diapason@gmail.com"
+                            class="text-gray-900 underline">aps.diapason@gmail.com</a>
                         </span>
                 </div>
                 <div class="row-span-1">
@@ -166,7 +185,47 @@
                 </div>
             </div>
 
-            <div class="grid grid-rows-2 gap-4 p-4 bg-teal-900 rounded-md md:pt-8 md:pb-8">
+
+            <!-- Begin Mailchimp Signup Form -->
+
+            <div id="mc_embed_signup" class="grid grid-rows-2 gap-4 p-4 bg-teal-900 rounded-md md:pt-8 md:pb-8">
+                <div class="text-center">
+                    <p class="font-sans text-2xl font-thin text-white">Vuoi rimanere aggiornato?</p>
+                    <p class="text-xl font-light text-teal-100">Iscriviti alla nostra mailing list</p>
+                </div>
+                <form
+                    action="https://gmail.us2.list-manage.com/subscribe/post?u=9e2f9c5799d61929841752029&amp;id=2b36b626af"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank">
+                    <div class="flex flex-row items-center">
+                        <div class="flex-1 w-2/4 m-1 text-xl rounded-md shadow-sm">
+                            <input id="mce-EMAIL" type="email" placeholder="indirizzo email" name="EMAIL" required
+                                class="block w-full p-2 text-base rounded form-input sm:leading-5">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                name="b_9e2f9c5799d61929841752029_2b36b626af" tabindex="-1" value="" /></div>
+                        <button type="submit" value="Subscribe" name="subscribe"
+                            class="w-1/3 px-4 py-2 font-sans font-bold text-white bg-teal-600 rounded hover:bg-teal-700">
+                            Iscriviti!
+                        </button>
+                    </div>
+                    <div class="p-2">
+                        <input type="checkbox" class="px-3 py-3 mt-2" id="ckgdpr" required />
+                        <label for="ckgdpr" class="text-teal-100"> Ho preso visione dell'informativa privacy disponibile
+                            <a class="underline"
+                                href="https://drive.google.com/file/d/1PeTx6faifozZSBWi5WpS5mXXZCgsOXi4/view?usp=sharing">qui</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+            <!-- <div class="grid grid-rows-2 gap-4 p-4 bg-teal-900 rounded-md md:pt-8 md:pb-8">
                 <div class="text-center">
                     <p class="font-sans text-2xl font-thin text-white">Vuoi rimanere aggiornato?</p>
                     <p class="text-xl font-light text-teal-100">Iscriviti alla nostra mailing list</p>
@@ -180,7 +239,7 @@
                         Iscriviti!
                     </button>
                 </div>
-            </div>
+            </div> -->
 
         </div> <!-- end contact block -->
 
