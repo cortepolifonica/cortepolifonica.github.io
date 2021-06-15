@@ -18,10 +18,8 @@
 
         var picIdx = Math.floor(Math.random() * pics.length);
         while ( current_paths.indexOf(pics[picIdx]) >= 0 ) {
-            console.log("picture is already shown");
             picIdx = Math.floor(Math.random() * pics.length);
         }
-        console.log("replacing with " + pics[picIdx]);
         imgs[imgIdx].src = pics[picIdx];
     }
 
