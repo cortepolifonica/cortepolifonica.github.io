@@ -13,7 +13,6 @@
     function shuffleImages() {
         const imgs = document.querySelectorAll(".face-thumb");
         const current_paths = Array.from(imgs).map(x => x.src);
-        console.log(current_paths);
         const imgIdx = Math.floor(Math.random() * imgs.length);
 
         var picIdx = Math.floor(Math.random() * pics.length);
