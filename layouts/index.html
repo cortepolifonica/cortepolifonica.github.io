@@ -12,15 +12,24 @@
         <div id="cover-boxes" class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
             <div
                 class="grid grid-cols-2 col-span-1 sm:col-span-2 sm:grid-cols-3 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
-                <div class="md:hidden lg:block bg-c1"></div>
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square bg-c1">
+                    <img src='{{ ( resources.Get "images/primi-piani/hq/Matteo1.png").RelPermalink }}' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c1" />
+                </div>
                 {{ partial "photo-box.html" (dict "img" "Giovanna2.png" "bg" "bg-c2") }}
                 {{ partial "photo-box.html" (dict "img" "Matteo2.png" "bg" "bg-c3") }}
                 {{ partial "photo-box.html" (dict "img" "Lucia1.png" "bg" "bg-c4") }}
-                <div class="md:hidden lg:block bg-c5"></div>
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square bg-c5">
+                    <img src='{{ ( resources.Get "images/primi-piani/hq/Laura1.png").RelPermalink }}' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c5" />
+                </div>
                 {{ partial "photo-box.html" (dict "img" "Francesca1.png" "bg" "bg-c6") }}
                 {{ partial "photo-box.html" (dict "img" "Gioia1.png" "bg" "bg-c1") }}
                 {{ partial "photo-box.html" (dict "img" "Laura2.png" "bg" "bg-c2") }}
-                <div class="hidden sm:block md:hidden bg-c4"></div>
+                <div class="hidden w-full sm:inline md:hidden aspect-square bg-c4">
+                    <img src='{{ ( resources.Get "images/primi-piani/hq/Davide4.png").RelPermalink }}' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c4" />
+                </div>
             </div>
             <div class="col-span-2">
                 <img class="sm:w-full sm:col-span-2"
@@ -29,14 +38,25 @@
             <div
                 class="grid grid-cols-2 col-span-1 sm:col-span-2 sm:grid-cols-3 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
                 {{ partial "photo-box.html" (dict "img" "Gianni3.png" "bg" "bg-c3") }}
-                <div class="hidden sm:block md:hidden bg-c1"></div>
+                <!-- <div class="hidden sm:block md:hidden bg-c1"></div> -->
+                <div class="hidden w-full sm:inline md:hidden aspect-square bg-c1">
+                    <img src='{{ ( resources.Get "images/primi-piani/hq/Lucia2.png").RelPermalink }}' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c1" />
+                </div>
                 {{ partial "photo-box.html" (dict "img" "Davide2.png" "bg" "bg-c4") }}
                 {{ partial "photo-box.html" (dict "img" "Martina1.png" "bg" "bg-c5") }}
-                <div class="md:hidden lg:block bg-c6"></div>
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square">
+                    <img src='{{ ( resources.Get "images/primi-piani/hq/Gioia2.png").RelPermalink }}' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c6" />
+                </div>
                 {{ partial "photo-box.html" (dict "img" "Antonio1.png" "bg" "bg-c1") }}
                 {{ partial "photo-box.html" (dict "img" "Chiara1.png" "bg" "bg-c2") }}
                 {{ partial "photo-box.html" (dict "img" "Martina2.png" "bg" "bg-c3") }}
-                <div class="md:hidden lg:block bg-c4"></div>
+                <!-- <div class="md:hidden lg:block bg-c4"></div> -->
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square">
+                    <img src='{{ ( resources.Get "images/primi-piani/hq/Giovanna1.png").RelPermalink }}' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c4" />
+                </div>
             </div>
         </div>
         <div class="w-full h-2 bg-backblack"></div>
