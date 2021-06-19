@@ -8,7 +8,7 @@
 
 
 <script>
-    const pics = {{ ( apply (resources.Match "images/primi-piani/hq/*.png") "absURL" "." ) | jsonify | safeJS }};
+    const pics = {{ (apply (resources.Match "images/primi-piani/hq/*.png") "absURL" "." ) | jsonify | safeJS }};
 
     function shuffleImages() {
         const imgs = document.querySelectorAll(".face-thumb");
@@ -16,7 +16,7 @@
         const imgIdx = Math.floor(Math.random() * imgs.length);
 
         var picIdx = Math.floor(Math.random() * pics.length);
-        while ( current_paths.indexOf(pics[picIdx]) >= 0 ) {
+        while (current_paths.indexOf(pics[picIdx]) >= 0) {
             picIdx = Math.floor(Math.random() * pics.length);
         }
         imgs[imgIdx].src = pics[picIdx];
@@ -43,43 +43,43 @@
         const splash = document.getElementById("splash");
         const logo = document.getElementById("navlogo");
         const navbar = document.getElementById("navbar");
+        const navbarContainer = document.getElementById("navbar-container");
         const content = document.getElementById("content");
         const filler = document.getElementById("splash-filler");
         const dark = document.body.style.backgroundColor;
         const light = "#F5F5F4";
 
         // Observe the navbar position
+        const options = {
+            threshold: 0.75
+        };
         new IntersectionObserver((entries, observer) => {
             for (const sentinel of entries) {
+                console.log(sentinel);
                 if (!sentinel.isIntersecting) {
-                    // The the navbar is sticking
-                    logo.classList.add("flex");
-                    logo.classList.remove("hidden");
-                    logo.style.animation = "fadeIn 1000ms ease-in forwards";
-                    navbar.style.justifyContent = "space-between";
+                    console.log("show");
+                    navbarContainer.classList.remove("hidden");
                     document.body.style.backgroundColor = light;
                 } else {
-                    // The navbar is not sticking
-                    logo.classList.add("hidden");
-                    logo.classList.remove("flex");
-                    navbar.style.justifyContent = "center";
+                    console.log("hide");
+                    navbarContainer.classList.add("hidden");
                     document.body.style.backgroundColor = dark
                 }
             }
-        })
-            .observe(document.querySelector("#nav-sentinel"));
+        }, options)
+            .observe(document.querySelector("#splash"));
 
         // observe the content div
-        new IntersectionObserver((entries, observer) => {
-            for (const sentinel of entries) {
-                if (sentinel.isIntersecting) {
-                    content.style.opacity = 1;
-                    content.style.animation = "fadeIn 1000ms ease-in forwards";
-                } else {
-                    content.style.opacity = 0;
-                }
-            }
-        })
-            .observe(document.querySelector("#content-sentinel"));
+        // new IntersectionObserver((entries, observer) => {
+        //     for (const sentinel of entries) {
+        //         if (sentinel.isIntersecting) {
+        //             content.style.opacity = 1;
+        //             content.style.animation = "fadeIn 1000ms ease-in forwards";
+        //         } else {
+        //             content.style.opacity = 0;
+        //         }
+        //     }
+        // })
+        //     .observe(document.querySelector("#content-sentinel"));
     }, false);
 </script>

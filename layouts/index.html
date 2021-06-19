@@ -4,11 +4,15 @@
 
 <body class="font-serif transition-colors duration-700 bg-backblack md:w-screen md:mx-auto">
 
-    <div id="splash">
-        <div class="w-full h-24 pt-4 pb-4 mb-2 bg-backblack">
+    {{- partial "main-nav.html" -}}
+
+    <div id="splash" class="top-0 flex flex-col w-full h-screen justify-evenly">
+
+        <div class="w-full h-24 pt-4 pb-4">
             <img class="h-16 mx-auto mt-2 mb-2"
                 src='{{ ( resources.Get "images/corte-polifonica-text.png" ).RelPermalink }}' alt="Corte Polifonica" />
         </div>
+
         <div id="cover-boxes" class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
             <div
                 class="grid grid-cols-2 col-span-1 sm:col-span-2 sm:grid-cols-3 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
@@ -59,19 +63,25 @@
                 </div>
             </div>
         </div>
-        <div class="w-full h-2 bg-backblack"></div>
-    </div>
 
-    {{- partial "main-nav.html" -}}
+        <div id="actions" class="flex flex-row w-2/3 mx-auto justify-evenly">
+            <button class="px-4 py-2 font-serif text-2xl font-bold text-white bg-red-500 rounded hover:bg-blue-700">
+                Canta con noi!
+            </button>
+            <button class="px-4 py-2 font-serif text-2xl font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
+                Seguici!
+            </button>
+        </div>
 
-    <section id="punchline"
-        class="flex flex-wrap mt-10 mb-20 text-3xl text-center text-gray-600 align-text-bottom content-evenly">
-        <p class="w-full text-center text-teal-700">
-            La Corte Polifonica è appena nata,<br /> abbiamo grandi cose in mente!
-        </p>
+        <div id="punchline"
+            class="flex flex-wrap mt-4 text-3xl text-center text-gray-600 align-text-bottom xl:text-4xl content-evenly">
+            <p class="w-full text-center text-teal-700">
+                La Corte Polifonica <br class="sm:hidden" /> è appena nata,<br /> abbiamo grandi cose in mente!
+            </p>
+        </div>
 
         <!-- down arrow -->
-        <div class="w-full">
+        <div class="w-full h-30">
             <a href="#content">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="960px" height="560px"
@@ -86,11 +96,12 @@
                 </svg>
             </a>
         </div>
-    </section>
+    </div>
+
 
     <!-- <div id="splash-filler"></div> -->
     <div id="content-sentinel" class="absolute z-10 w-full h-2 mt-10 top-full"></div>
-    <div id="content" class="p-4 mx-auto mt-10 opacity-0 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
+    <div id="content" class="p-4 mx-auto mt-10 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
         <section id="sec-next-event" class="mt-10 font-sans bg-gray-100 rounded-lg shadow-lg">
             <div class="flex flex-col items-center justify-between sm:flex-row">
                 <h1 class="pt-8 pl-8 pr-8 font-serif text-5xl text-center text-gray-600 sm:text-left">Metamorfosi</h1>
