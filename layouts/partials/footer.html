@@ -55,7 +55,6 @@
         };
         new IntersectionObserver((entries, observer) => {
             for (const sentinel of entries) {
-                console.log(sentinel);
                 if (!sentinel.isIntersecting) {
                     console.log("show");
                     navbarContainer.classList.remove("hidden");
