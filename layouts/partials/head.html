@@ -5,17 +5,17 @@
     <title>{{ block "title" . }}
         {{ .Site.Title }}
         {{ end }}</title>
-    <!-- TODO: add description -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- TODO: fill these tags for ogp.me social media integration -->
+    <!-- add description -->
+    <meta name="description" content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno.">
+    <meta name="author" content="Matteo Ceccarello">
+    <!-- fill these tags for ogp.me social media integration -->
     <!-- https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing -->
-    <!-- <meta property="og:title" content="" />
-    <meta property="og:url" content="https://www.example.com/webpage/" />
-    <meta property="og:description" content="description of your website/webpage">
-    <meta property="og:image" content="//cdn.example.com/uploads/images/webpage_300x200.png">
-    <meta property="og:locale:alternate" content="es_ES" />
-    <meta property="og:type" content="article" /> -->
+    <meta property="og:title" content="Corte Polifonica" />
+    <meta property="og:url" content="https://cortepolifonica.it" />
+    <meta property="og:description" content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno. Il coro nasce nel 2020.">
+    <meta property="og:image" content='{{ resources.Get "images/logo-corte-polifonica.png" | absURL }}'>
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:type" content="website" />
 
     <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
