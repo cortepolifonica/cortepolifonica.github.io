@@ -1,6 +1,6 @@
 ---
 title: Rassegna ASAC
-eventdate: 2021-09-18 20:45
+eventdate: 2021-09-18 20:45:00
 place: Giardino Teatro Palazzo Zuckermann
 address: Corso Giuseppe Garibaldi, 33, 35122 Padova PD
 layout: event

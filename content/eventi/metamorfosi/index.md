@@ -1,6 +1,6 @@
 ---
 title: Metamorfosi
-eventdate: 2021-06-20 19:00
+eventdate: 2021-06-20 19:00:00
 place: Palazzo Esedra
 address: via 4 Novembre, 23, Padova
 layout: event
