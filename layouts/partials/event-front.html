@@ -7,7 +7,8 @@
         </h1>
         <div class="flex flex-col items-center pt-8 pl-8 pr-8 font-serif text-gray-700 sm:items-end">
             <div class="text-2xl text-center sm:text-left">
-                {{ .Params.eventdate }}
+                {{ $eventdate := (time .Params.eventdate) }}
+                {{ ($eventdate).Format "2 January 2006, 15:04" }}
             </div>
             <div class="flex flex-col items-center ml-5 text-xl sm:items-end">
                 <span>{{ .Params.place }}</span>
