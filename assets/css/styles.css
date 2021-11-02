@@ -28,3 +28,9 @@
     opacity: 0;
     transition: visibility 0s 2s, opacity 2s linear;
 }
+
+@layer components {
+    .markdown-content > p {
+        @apply pl-8 pr-8 pb-2 pt-2 font-serif text-lg text-gray-800
+    }
+}
