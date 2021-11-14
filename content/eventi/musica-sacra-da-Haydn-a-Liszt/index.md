@@ -1,7 +1,7 @@
 ---
 title: Romanticismo tedesco
 subtitle: Musica sacra da Haydn a Liszt
-eventdate: 2021-11-17 18:00:00
+eventdate: 2021-10-17 18:00:00
 place: Chiesa di Ognissanti
 address: Via Ognissanti, 68, Padova
 layout: event
