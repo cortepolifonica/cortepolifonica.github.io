@@ -1,0 +1,9 @@
+{% macro box(fname, bg) %}
+
+<div class="w-full sm:inline aspect-square">
+  <img src='{{ "/images/primi-piani/hq/" ~ fname }}' alt=""
+      class="face-thumb w-full cover-box transition-opacity inline {{ bg }}" />
+</div>
+
+{% endmacro %}
+

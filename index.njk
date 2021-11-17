@@ -1,0 +1,246 @@
+---
+layout: base.njk
+navbarHidden: true
+---
+
+{% import "macros/photo-box.njk" as photo %}
+
+<div id="index-content" class="">
+    <div id="splash" class="top-0 flex flex-col w-full h-screen justify-evenly">
+
+        <div class="w-full h-24 pt-4 pb-4">
+            <img class="h-16 mx-auto mt-2 mb-2"
+                src='/images/corte-polifonica-text.png' alt="Corte Polifonica" />
+        </div>
+
+        <div id="cover-boxes" class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
+            <div
+                class="grid grid-cols-2 col-span-1 sm:col-span-2 sm:grid-cols-3 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square bg-c1">
+                    <img src='/images/primi-piani/hq/Matteo1.png' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c1" />
+                </div>
+                {{ photo.box(fname="Giovanna2.png",  bg="bg-c2") }}
+                {{ photo.box(fname="Matteo2.png", bg="bg-c3") }}
+                {{ photo.box(fname="Lucia1.png", bg="bg-c4") }}
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square bg-c5">
+                    <img src='/images/primi-piani/hq/Laura1.png' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c5" />
+                </div>
+                {{ photo.box(fname="Francesca1.png", bg="bg-c6") }}
+                {{ photo.box(fname="Gioia1.png", bg="bg-c1") }}
+                {{ photo.box(fname="Laura2.png", bg="bg-c2") }}
+                <div class="hidden w-full sm:inline md:hidden aspect-square bg-c4">
+                    <img src='/images/primi-piani/hq/Davide4.png' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c4" />
+                </div>
+            </div>
+            <div class="col-span-2">
+                <img class="sm:w-full sm:col-span-2"
+                    src='/images/logo-banner-2.svg' alt="" />
+            </div>
+            <div
+                class="grid grid-cols-2 col-span-1 sm:col-span-2 sm:grid-cols-3 md:col-span-3 lg:col-span-4 md:grid-cols-3 lg:grid-cols-4">
+                {{ photo.box(fname="Gianni3.png", bg="bg-c3") }}
+                <!-- <div class="hidden sm:block md:hidden bg-c1"></div> -->
+                <div class="hidden w-full sm:inline md:hidden aspect-square bg-c1">
+                    <img src='/images/primi-piani/hq/Lucia2.png' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c1" />
+                </div>
+                {{ photo.box(fname="Davide2.png", bg="bg-c4") }}
+                {{ photo.box(fname="Martina1.png", bg="bg-c5") }}
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square">
+                    <img src='/images/primi-piani/hq/Gioia2.png' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c6" />
+                </div>
+                {{ photo.box(fname="Antonio1.png", bg="bg-c1") }}
+                {{ photo.box(fname="Chiara1.png", bg="bg-c2") }}
+                {{ photo.box(fname="Martina2.png", bg="bg-c3") }}
+                <!-- <div class="md:hidden lg:block bg-c4"></div> -->
+                <div class="w-full sm:inline md:hidden lg:inline aspect-square">
+                    <img src='/images/primi-piani/hq/Giovanna1.png' alt=""
+                        class="w-full transition-opacity face-thumb cover-box bg-c4" />
+                </div>
+            </div>
+        </div>
+
+        <div id="punchline"
+            class="flex flex-wrap mt-4 text-3xl text-center text-gray-600 align-text-bottom xl:text-4xl content-evenly">
+            <p class="w-full text-center text-teal-700">
+                La Corte Polifonica <br class="sm:hidden" /> è appena nata,<br /> abbiamo grandi cose in mente!
+            </p>
+        </div>
+
+        <!-- down arrow -->
+        <div class="w-full h-30">
+            <a href="#content">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="960px" height="560px"
+                    viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve"
+                    class="w-20 h-20 mx-auto" id="down-arrow">
+                    <g>
+                        <path d="M480,344.181L268.869,131.889c-15.756-15.859-41.3-15.859-57.054,0c-15.754,15.857-15.754,41.57,0,57.431l237.632,238.937
+		c8.395,8.451,19.562,12.254,30.553,11.698c10.993,0.556,22.159-3.247,30.555-11.698l237.631-238.937
+		c15.756-15.86,15.756-41.571,0-57.431s-41.299-15.859-57.051,0L480,344.181z"
+                            class="text-gray-200 fill-current animate-pulse" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div id="content-sentinel" class="absolute z-10 w-full h-2 mt-10 top-full"></div>
+    <div id="content" class="p-4 mx-auto mt-10 md:p-0 md:w-8/12 lg:w-8/12 xl:w-7/12">
+
+        {#
+            The following gets the most recent event and places it on the front page
+        #}
+        {% include "next-event.njk" %}
+
+        <section id="sec-description" class="mt-10 font-sans bg-gray-100 rounded-lg shadow-lg md:mb-10">
+            <h1 id="chi-siamo" class="p-8 font-serif text-3xl text-gray-700">Il coro</h1>
+            <img class="w-full shadow-2xl filter grayscale"
+                src='/images/giardino-crop.jpeg' />
+            <div class="p-8">
+                <p class="mt-3 text-left">
+                    La Corte polifonica nasce nel 2020, all'interno
+                    dell'associazione musicale Diapason.
+                </p>
+                <p class="mt-3 text-left">
+                    È formata da amici,
+                    musicisti, cantori, accomunati dal desiderio di ritornare
+                    a fare musica insieme, dopo mesi di forzato silenzio, e
+                    di cimentarsi in un repertorio nuovo ed appassionante.
+                </p>
+                <p class="mt-3 text-left">
+                    Ecco che il coro ha scelto di lavorare su un repertorio
+                    romantico e moderno, con attenzione alla contemporaneità.
+                </p>
+                <p class="mt-3 text-left">
+                    La sede del coro dà il nome al nostro gruppo, che sparge
+                    buona musica dalla corte di casa della direttrice... per
+                    tutto il vicinato!
+                </p>
+            </div>
+        </section>
+
+
+        <section class="p-4 mt-10 font-sans bg-gray-100 rounded-lg shadow-lg md:mb-10">
+            <div class="p-4">
+                <h1 class="font-serif text-3xl text-gray-700">La direttrice</h1>
+                <img class="relative float-none w-full m-8 mx-auto rounded-full sm:w-1/2 sm:mx-0 sm:float-right"
+                    src='/images/Martina-direzione.jpg' />
+                
+                <p class="mt-3 text-left">
+                  Martina Frigo ha studiato pianoforte con i maestri Ruffin
+                  Armellini, Rigon e Chemin, diplomandosi in pianoforte nel
+                  2011 e in musica da camera nel 2017, con il massimo dei voti.
+                  Ha partecipato a numerose masterclass pianistici con maestri
+                  di fama internazionale: Enrico Pace, Alberto Nosè, Marian
+                  Mika, Lilya Zilberstein e Simone Soldati. È stata vincitrice
+                  della borsa di studio regionale per l'accompagnamento
+                  pianistico presso il Conservatorio C. Pollini, nel 2013 e
+                  2014, del secondo premio al Concorso Internazionale Giovani
+                  Pianisti 2013 di Legnago e di premi in concorsi nazionali ed
+                  internazionali.
+                </p>
+
+                <p class="mt-3 text-left">
+                  Ha studiato canto con il soprano Takako Okazaki e il soprano
+                  Tatiana Aguiar, perfezionandosi nelle tecniche di vocalità e
+                  di direzione corale nel biennio dell'accademia di direzione
+                  corale Righele dell'ASAC. Partecipa come maestro
+                  collaboratore o come corista a molte realtà corali padovane.
+                  Ha fondato e diretto per alcuni anni l'ensemble “Corymbus” di
+                  Padova, ha diretto il coro studentesco del Liceo Scalcerle e
+                  il coro "Nova Symphonia Patavina" che sotto la sua direzione
+                  ha vinto il secondo premio al Festival della Coralità Veneta
+                  2018. Attualmente dirige il coro Corte Polifonica e il gruppo
+                  vocale Corre Voce di Padova e frequenta il secondo anno del
+                  corso di direzione corale dell’Accademia Righele dell’ASAC
+                  Veneto.
+                </p>
+            </div>
+        </section>
+
+        <div id="contatti" class=""></div>
+        <div class="grid mt-8 mb-10 gap-x-8 gap-y-10 md:mt-0 md:grid-cols-2 ">
+
+            <div id="scrivici" class="grid gap-4 p-4 bg-gray-100 rounded-lg shadow-lg grid-row-1">
+                <div class="flex flex-col row-span-1 mt-auto mb-auto text-xl text-center text-gray-700">
+                    <span class="">
+                        Vuoi partecipare?
+                        Hai un progetto da proporci?
+                    </span>
+                    <spa>
+                        Scrivici a
+                        <a href="mailto:aps.diapason@gmail.com"
+                            class="text-gray-900 underline">aps.diapason@gmail.com</a>
+                        </span>
+                </div>
+                <div class="row-span-1">
+                    <img src="/images/primi-piani/hq/Matteo6.png" alt="Persona di riferimento"
+                        class="w-1/2 mx-auto bg-teal-500 rounded-full sm:w-1/3 md:w-1/5">
+                </div>
+            </div>
+
+
+            <!-- Begin Mailchimp Signup Form -->
+
+            <div id="mc_embed_signup" class="grid grid-rows-2 gap-4 p-4 bg-teal-900 rounded-md md:pt-8 md:pb-8">
+                <div class="text-center">
+                    <p class="font-sans text-2xl font-thin text-white">Vuoi rimanere aggiornato?</p>
+                    <p class="text-xl font-light text-teal-100">Iscriviti alla nostra mailing list</p>
+                </div>
+                <form
+                    action="https://gmail.us2.list-manage.com/subscribe/post?u=9e2f9c5799d61929841752029&amp;id=2b36b626af"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank">
+                    <div class="flex flex-row items-center">
+                        <div class="flex-1 w-2/4 m-1 text-xl rounded-md shadow-sm">
+                            <input id="mce-EMAIL" type="email" placeholder="indirizzo email" name="EMAIL" required
+                                class="block w-full p-2 text-base rounded form-input sm:leading-5">
+                        </div>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                name="b_9e2f9c5799d61929841752029_2b36b626af" tabindex="-1" value="" /></div>
+                        <button type="submit" value="Subscribe" name="subscribe"
+                            class="w-1/3 px-4 py-2 font-sans font-bold text-white bg-teal-600 rounded hover:bg-teal-700">
+                            Iscriviti!
+                        </button>
+                    </div>
+                    <div class="p-2">
+                        <input type="checkbox" class="px-3 py-3 mt-2" id="ckgdpr" required />
+                        <label for="ckgdpr" class="text-teal-100"> Ho preso visione dell'informativa privacy disponibile
+                            <a class="underline"
+                                href="https://drive.google.com/file/d/1PeTx6faifozZSBWi5WpS5mXXZCgsOXi4/view?usp=sharing">qui</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+            <!-- <div class="grid grid-rows-2 gap-4 p-4 bg-teal-900 rounded-md md:pt-8 md:pb-8">
+                <div class="text-center">
+                    <p class="font-sans text-2xl font-thin text-white">Vuoi rimanere aggiornato?</p>
+                    <p class="text-xl font-light text-teal-100">Iscriviti alla nostra mailing list</p>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex-1 w-2/4 m-1 text-xl rounded-md shadow-sm">
+                        <input id="input-email" type="text" placeholder="indirizzo email"
+                            class="block w-full p-2 text-base rounded form-input sm:leading-5">
+                    </div>
+                    <button class="px-4 py-2 font-sans font-bold text-white bg-teal-600 rounded hover:bg-teal-700">
+                        Iscriviti!
+                    </button>
+                </div>
+            </div> -->
+
+        </div> <!-- end contact block -->
+
+    </div>
+</div>

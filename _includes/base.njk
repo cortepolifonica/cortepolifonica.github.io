@@ -1,0 +1,13 @@
+---
+navbarHidden: false
+bgColor: bg-backblack
+---
+<!DOCTYPE html>
+<html>
+    {% include "head.njk" %}
+    <body class="font-serif transition-colors duration-700 {{ bgColor }} md:w-screen md:mx-auto">
+        {% include "main-nav.html" %}
+        {{ content | safe }}
+        {% include "footer.njk" %}
+    </body>
+</html>
