@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+        .markdown-content {
+                @apply p-4 text-lg;
+        }
+        .markdown-content > p {
+                @apply mb-4;
+        }
+}

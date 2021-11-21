@@ -1,0 +1,36 @@
+---
+title: Eventi
+layout: base.njk
+bgColor: white
+---
+
+<main class="font-serif transition-colors duration-700 md:w-screen md:mx-auto">
+    <div class="w-8/12 min-h-screen mx-auto">
+        <div class="grid grid-cols-2 gap-9">
+            {% for event in collections.events %}
+            <a href="{{ event.url }}" class="col-span-1">
+                <div class="bg-white rounded shadow-2xl">
+                    <h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl ">{{ event.data.title }}</h1>
+                    <img src="{{ event.url ~ '/' ~ event.data.splash }}" alt=""
+                        class="object-cover w-full h-20 mt-0 mb-0" />
+                    <div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
+                        {% set eventdate = event.data.eventdate  %}
+                        <div class="text-8xl">
+                                {{ eventdate.toLocaleDateString("it-IT", {day: 'numeric'}) }}
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <div class="text-4xl">
+                                {{ eventdate.toLocaleDateString("it-IT", {month: 'long'}) }}
+                            </div>
+                            <div class="bottom-0 text-4xl">
+                                {{ eventdate.toLocaleDateString("it-IT", {year: 'numeric'}) }}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</main>
