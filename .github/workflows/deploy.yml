@@ -29,18 +29,20 @@ jobs:
 #     - run: npm install tailwindcss@1.8.13
 #     - run: npm install autoprefixer@9.8.6
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: '0.88.1'
+    # - name: Setup Hugo
+    #   uses: peaceiris/actions-hugo@v2
+    #   with:
+    #     hugo-version: '0.88.1'
 
-    # Runs a single command using the runners shell
     - name: Build the website
-      run: hugo --minify
+      run: npx eleventy
+
+    - name: Setup tailwind
+      run: npx tailwindcss -i _includes/styles.in.css -o _site/styles.css --minify
   
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        publish_dir: ./_site
         cname: cortepolifonica.it
