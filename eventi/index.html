@@ -1,121 +1,289 @@
-<!doctype html><html><head>
-<meta charset=utf-8>
-<title>
-La Corte Polifonica
-</title>
-<meta name=description content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno.">
-<meta name=author content="Matteo Ceccarello">
-<meta property="og:title" content="Corte Polifonica">
-<meta property="og:url" content="https://cortepolifonica.it">
-<meta property="og:description" content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno. Il coro nasce nel 2020.">
-<meta property="og:image" content="https://cortepolifonica.it/images/logo-corte-polifonica.png">
-<meta property="og:locale" content="it_IT">
-<meta property="og:type" content="website">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Pacifico&family=Lato&display=swap" rel=stylesheet>
-<meta http-equiv=content-type content="text/html" charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href="/css/styles.min.4910fea2a0350e9c646b857378a296a7bf7e836b8a0d61ea4a63bdfdf26aa51d.css" integrity="sha256-SRD+oqA1Dpxka4VzeKKWp79+g2uKDWHqSmO9/fJqpR0=">
-<script>function shuffle(a){for(var b=a.length,d,c;0!==b;)c=Math.floor(Math.random()*b),b-=1,d=a[b],a[b]=a[c],a[c]=d;return a}function basename(b){var a=new String(b).substring(b.lastIndexOf('/')+1);return a.lastIndexOf(".")!=-1&&(a=a.substring(0,a.lastIndexOf("."))),a}</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVT0Y3Q9LH"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-JVT0Y3Q9LH')</script>
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Corte Polifonica</title>
+    <!-- add description -->
+    <meta name="description" content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno.">
+    <meta name="author" content="Matteo Ceccarello">
+    <!-- fill these tags for ogp.me social media integration -->
+    <!-- https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing -->
+    <meta property="og:title" content="Corte Polifonica" />
+    <meta property="og:url" content="https://cortepolifonica.it" />
+    <meta property="og:description" content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno. Il coro nasce nel 2020.">
+    <meta property="og:image" content='/images/logo-corte-polifonica.png'>
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:type" content="website" />
+
+    <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Pacifico&family=Lato&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+    <script>
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+
+        function basename(str) {
+            var base = new String(str).substring(str.lastIndexOf('/') + 1);
+            if (base.lastIndexOf(".") != -1) {
+                base = base.substring(0, base.lastIndexOf("."));
+            }
+            return base;
+        }
+    </script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVT0Y3Q9LH"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-JVT0Y3Q9LH');
+	</script>
+
 </head>
-<body><div id=content>
-<main class="font-serif transition-colors duration-700 md:w-screen md:mx-auto">
-<div id=nav-sentinel class=w-full></div>
-<div id=navbar-container class="w-full pt-2 mb-8 bg-backblack">
-<nav id=navbar class="z-50 flex flex-col text-2xl text-center text-gray-100 border-gray-500 font-extralight bg-backblack md:flex-row md:flex-no-wrap md:space-x-3 md:justify-between md:w-full lg:8/12 md:mx-auto md:text-center md:pl-4 md:pr-4">
-<div id=navlogo class="flex flex-row justify-between md:space-x-3">
-<a href=/ class="flex flex-row justify-between space-x-3">
-<img class="h-16 mt-1 mb-1" src=/images/logo-corte-polifonica.png></img>
-<img class="h-12 mt-5 mb-5" src=/images/corte-polifonica-text.png alt="Corte Polifonica">
-</a>
-<div class="block my-auto ml-3 mr-3 sm:hidden">
-<button class="flex items-center px-3 py-2 text-gray-200" onclick=toggleNavbar()><svg class="w-8 h-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-</button>
-</div>
-</div>
-<div id=nav-links class="z-50 flex-col justify-center hidden pt-5 pb-5 mt-2 sm:flex sm:flex-row sm:z-0">
-<a href=/eventi>Eventi</a>
-<span class="hidden md:inline">&#183;</span>
-<a href=#contatti>Contatti</a>
-<span class="hidden md:inline">&#183;</span>
-<a href=https://cecca.github.io/repertorio-coro>Area riservata</a>
-<span class="hidden md:inline">&#183;</span>
-<a href=https://apsdiapason.it>Diapason</a>
-</div>
-</nav>
-</div>
-<div class="w-8/12 min-h-screen mx-auto">
-<div class="grid grid-cols-2 gap-9">
-<a href=https://cortepolifonica.it/eventi/musica-sacra-da-haydn-a-liszt/ class=col-span-1>
-<div class="bg-white rounded shadow-2xl">
-<h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl">Romanticismo tedesco</h1>
-<img src=/eventi/musica-sacra-da-haydn-a-liszt/images/vetrata.jpg alt class="object-cover w-full h-20 mt-0 mb-0">
-<div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
-<div class=text-8xl>
-17
-</div>
-<div class="flex flex-col justify-center">
-<div class=text-4xl>
-October
-</div>
-<div class="bottom-0 text-4xl">
-2021
-</div>
-</div>
-</div>
-</div>
-</a>
-<a href=https://cortepolifonica.it/eventi/metamorfosi-2/ class=col-span-1>
-<div class="bg-white rounded shadow-2xl">
-<h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl">Rassegna ASAC</h1>
-<img src=/eventi/metamorfosi-2/images/metamorfosi.jpg alt class="object-cover w-full h-20 mt-0 mb-0">
-<div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
-<div class=text-8xl>
-18
-</div>
-<div class="flex flex-col justify-center">
-<div class=text-4xl>
-September
-</div>
-<div class="bottom-0 text-4xl">
-2021
-</div>
-</div>
-</div>
-</div>
-</a>
-<a href=https://cortepolifonica.it/eventi/metamorfosi/ class=col-span-1>
-<div class="bg-white rounded shadow-2xl">
-<h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl">Metamorfosi</h1>
-<img src=/eventi/metamorfosi/images/metamorfosi.jpg alt class="object-cover w-full h-20 mt-0 mb-0">
-<div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
-<div class=text-8xl>
-20
-</div>
-<div class="flex flex-col justify-center">
-<div class=text-4xl>
-June
-</div>
-<div class="bottom-0 text-4xl">
-2021
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
+
+    <body class="font-serif transition-colors duration-700 white md:w-screen md:mx-auto">
+        <div id="nav-sentinel" class="w-full"></div>
+
+  <div id="navbar-container" class="w-full pt-2 mb-8 bg-backblack">
+    
+    <nav id="navbar"
+      class="z-50 flex flex-col text-2xl text-center text-gray-100 border-gray-500 font-extralight bg-backblack md:flex-row md:flex-no-wrap md:space-x-3 md:justify-between md:w-full lg:8/12 md:mx-auto md:text-center md:pl-4 md:pr-4">
+      <div id="navlogo" class="flex flex-row justify-between md:space-x-3">
+        <a href="/" class="flex flex-row justify-between space-x-3">
+          <img class="h-16 mt-1 mb-1" src='/images/logo-corte-polifonica.png'></img>
+          <img class="h-12 mt-5 mb-5" src='/images/corte-polifonica-text.png' alt="Corte Polifonica" />
+        </a>
+        <div class="block my-auto ml-3 mr-3 sm:hidden">
+          <button class="flex items-center px-3 py-2 text-gray-200 " onclick="toggleNavbar()">
+            <!-- <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Noun_project_-_Music_notes.svg"> -->
+            <svg class="w-8 h-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id='nav-links' class="z-50 flex-col justify-center hidden pt-5 pb-5 mt-2 space-x-2 sm:flex sm:flex-row sm:z-0">
+        <a href="/eventi">Eventi</a>
+        <span class="hidden md:inline">&middot;</span>
+        <a href="#contatti">Contatti</a>
+        <span class="hidden md:inline">&middot;</span>
+        <a href="https://cecca.github.io/repertorio-coro">Area riservata</a>
+        <span class="hidden md:inline">&middot;</span>
+        <a href="https://apsdiapason.it">Diapason</a>
+      </div>
+    </nav>
+  </div>
+        
+
+
+<main class="mb-8 font-serif transition-colors duration-700 md:w-screen md:mx-auto">
+    <div class="w-11/12 min-h-screen mx-auto sm:9/12 md:w-8/12">
+        <h1 class="mt-4 mb-4 text-4xl text-gray-600">Prossimi eventi</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-9">
+                
+                <a href="/eventi/musica-sacra-da-Haydn-a-Liszt-2/" class="col-span-1">
+                <div class="bg-white rounded shadow-2xl">
+                        <h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl ">Romanticismo tedesco</h1>
+                        <img src="/eventi/musica-sacra-da-Haydn-a-Liszt-2//images/candles2.jpg" alt=""
+                        class="object-cover w-full h-20 mt-0 mb-0" />
+                        <div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
+                        
+                        <div class="text-8xl">
+                                5
+                        </div>
+                        <div class="flex flex-col justify-center">
+                                <div class="text-4xl">
+                                dicembre
+                                </div>
+                                <div class="bottom-0 text-4xl">
+                                2021
+                                </div>
+
+                        </div>
+                        </div>
+                </div>
+                </a>
+                
+        </div>
+
+        <hr class="mt-10 mb-10 border-t-2 border-gray-400"/>
+        <h1 class="mt-4 mb-4 text-4xl text-gray-600">Archivio eventi</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-9">
+                
+                <a href="/eventi/musica-sacra-da-Haydn-a-Liszt/" class="col-span-1">
+                <div class="bg-white rounded shadow-2xl">
+                        <h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl ">Romanticismo tedesco</h1>
+                        <img src="/eventi/musica-sacra-da-Haydn-a-Liszt//images/vetrata.jpg" alt=""
+                        class="object-cover w-full h-20 mt-0 mb-0" />
+                        <div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
+                        
+                        <div class="text-8xl">
+                                17
+                        </div>
+                        <div class="flex flex-col justify-center">
+                                <div class="text-4xl">
+                                ottobre
+                                </div>
+                                <div class="bottom-0 text-4xl">
+                                2021
+                                </div>
+
+                        </div>
+                        </div>
+                </div>
+                </a>
+                
+                <a href="/eventi/metamorfosi/" class="col-span-1">
+                <div class="bg-white rounded shadow-2xl">
+                        <h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl ">Metamorfosi</h1>
+                        <img src="/eventi/metamorfosi//images/metamorfosi.jpg" alt=""
+                        class="object-cover w-full h-20 mt-0 mb-0" />
+                        <div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
+                        
+                        <div class="text-8xl">
+                                20
+                        </div>
+                        <div class="flex flex-col justify-center">
+                                <div class="text-4xl">
+                                giugno
+                                </div>
+                                <div class="bottom-0 text-4xl">
+                                2021
+                                </div>
+
+                        </div>
+                        </div>
+                </div>
+                </a>
+                
+                <a href="/eventi/metamorfosi-2/" class="col-span-1">
+                <div class="bg-white rounded shadow-2xl">
+                        <h1 class="pt-4 pb-4 pl-8 pr-8 text-3xl ">Rassegna ASAC</h1>
+                        <img src="/eventi/metamorfosi-2//images/metamorfosi.jpg" alt=""
+                        class="object-cover w-full h-20 mt-0 mb-0" />
+                        <div class="flex flex-row justify-center pt-4 pb-4 pl-8 pr-8 space-x-6">
+                        
+                        <div class="text-8xl">
+                                18
+                        </div>
+                        <div class="flex flex-col justify-center">
+                                <div class="text-4xl">
+                                settembre
+                                </div>
+                                <div class="bottom-0 text-4xl">
+                                2021
+                                </div>
+
+                        </div>
+                        </div>
+                </div>
+                </a>
+                
+        </div>
+
+    </div>
 </main>
-</div><div class="p-4 text-teal-100 bg-teal-900">
-<div class="flex flex-col md:w-8/12 md:mx-auto">
-<span color=text-teal-300>Copyright 2020 &copy;</span>
-<span>Associazione Culturale Diapason</span>
+        <div class="p-4 text-teal-100 bg-teal-900 ">
+    <div class="flex flex-col md:w-8/12 md:mx-auto">
+        <span color="text-teal-300">Copyright 2020 &copy;</span>
+        <span>Associazione Culturale Diapason</span>
+    </div>
 </div>
-</div>
-<script>const pics=["https://cortepolifonica.it/images/primi-piani/hq/Antonio1.png","https://cortepolifonica.it/images/primi-piani/hq/Antonio2.png","https://cortepolifonica.it/images/primi-piani/hq/Chiara1.png","https://cortepolifonica.it/images/primi-piani/hq/Chiara2.png","https://cortepolifonica.it/images/primi-piani/hq/Davide2.png","https://cortepolifonica.it/images/primi-piani/hq/Davide4.png","https://cortepolifonica.it/images/primi-piani/hq/Davide5.png","https://cortepolifonica.it/images/primi-piani/hq/Francesca1.png","https://cortepolifonica.it/images/primi-piani/hq/Francesca3.png","https://cortepolifonica.it/images/primi-piani/hq/Francesca4.png","https://cortepolifonica.it/images/primi-piani/hq/Francesca5.png","https://cortepolifonica.it/images/primi-piani/hq/Francesca6.png","https://cortepolifonica.it/images/primi-piani/hq/Francesca7.png","https://cortepolifonica.it/images/primi-piani/hq/Gianni1.png","https://cortepolifonica.it/images/primi-piani/hq/Gianni2.png","https://cortepolifonica.it/images/primi-piani/hq/Gianni3.png","https://cortepolifonica.it/images/primi-piani/hq/Gioia1.png","https://cortepolifonica.it/images/primi-piani/hq/Gioia2.png","https://cortepolifonica.it/images/primi-piani/hq/Giovanna1.png","https://cortepolifonica.it/images/primi-piani/hq/Giovanna2.png","https://cortepolifonica.it/images/primi-piani/hq/Giovanna3.png","https://cortepolifonica.it/images/primi-piani/hq/Laura1.png","https://cortepolifonica.it/images/primi-piani/hq/Laura2.png","https://cortepolifonica.it/images/primi-piani/hq/Laura3.png","https://cortepolifonica.it/images/primi-piani/hq/Laura4.png","https://cortepolifonica.it/images/primi-piani/hq/Laura5.png","https://cortepolifonica.it/images/primi-piani/hq/Lucia1.png","https://cortepolifonica.it/images/primi-piani/hq/Lucia2.png","https://cortepolifonica.it/images/primi-piani/hq/Lucia3.png","https://cortepolifonica.it/images/primi-piani/hq/Martina1.png","https://cortepolifonica.it/images/primi-piani/hq/Martina2.png","https://cortepolifonica.it/images/primi-piani/hq/Martina3.png","https://cortepolifonica.it/images/primi-piani/hq/Martina4.png","https://cortepolifonica.it/images/primi-piani/hq/Martina5.png","https://cortepolifonica.it/images/primi-piani/hq/Matteo1.png","https://cortepolifonica.it/images/primi-piani/hq/Matteo2.png","https://cortepolifonica.it/images/primi-piani/hq/Matteo4.png","https://cortepolifonica.it/images/primi-piani/hq/Matteo5.png","https://cortepolifonica.it/images/primi-piani/hq/Matteo6.png"];function shuffleImages(){const a=document.querySelectorAll(".face-thumb"),c=Array.from(a).map(a=>a.src),d=Math.floor(Math.random()*a.length);for(var b=Math.floor(Math.random()*pics.length);c.indexOf(pics[b])>=0;)b=Math.floor(Math.random()*pics.length);a[d].src=pics[b]}</script>
-<script>function toggleNavbar(){var a=document.getElementById("nav-links");a.style.display==="flex"?a.style.display="none":a.style.display="flex"}</script>
-<script>window.addEventListener("load",e=>{const h=document.getElementById("splash"),i=document.getElementById("navlogo"),j=document.getElementById("navbar"),a=document.getElementById("navbar-container"),f=document.getElementById("content"),g=document.getElementById("splash-filler"),b=document.body.style.backgroundColor,c="#F5F5F4",d={threshold:.75};new IntersectionObserver((d,e)=>{for(const e of d)e.isIntersecting?(console.log("hide"),a.classList.add("hidden"),document.body.style.backgroundColor=b):(console.log("show"),a.classList.remove("hidden"),document.body.style.backgroundColor=c)},d).observe(document.querySelector("#splash"))},!1)</script></body>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function toggleNavbar() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
+</script>
+
+<script>
+
+    window.addEventListener("load", (event) => {
+        const splash = document.getElementById("splash");
+        const logo = document.getElementById("navlogo");
+        const navbar = document.getElementById("navbar");
+        const navbarContainer = document.getElementById("navbar-container");
+        const content = document.getElementById("content");
+        const filler = document.getElementById("splash-filler");
+        const dark = document.body.style.backgroundColor;
+        const light = "#F5F5F4";
+
+        // Observe the navbar position
+        const options = {
+            threshold: 0.75
+        };
+        new IntersectionObserver((entries, observer) => {
+            for (const sentinel of entries) {
+                if (!sentinel.isIntersecting) {
+                    console.log("show");
+                    navbarContainer.classList.remove("hidden");
+                    document.body.style.backgroundColor = light;
+                } else {
+                    console.log("hide");
+                    navbarContainer.classList.add("hidden");
+                    document.body.style.backgroundColor = dark
+                }
+            }
+        }, options)
+            .observe(document.querySelector("#splash"));
+
+        // observe the content div
+        // new IntersectionObserver((entries, observer) => {
+        //     for (const sentinel of entries) {
+        //         if (sentinel.isIntersecting) {
+        //             content.style.opacity = 1;
+        //             content.style.animation = "fadeIn 1000ms ease-in forwards";
+        //         } else {
+        //             content.style.opacity = 0;
+        //         }
+        //     }
+        // })
+        //     .observe(document.querySelector("#content-sentinel"));
+    }, false);
+</script>
+    </body>
 </html>
