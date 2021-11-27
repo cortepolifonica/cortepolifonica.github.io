@@ -8,7 +8,8 @@ bgColor: white
         {% if subtitle %}
         <h2 class="mb-4 text-3xl text-gray-600">{{ subtitle }}</h1>
         {% endif %}
-        <img src="{{ splash }}" alt="" class="object-cover w-full h-20 mt-0 mb-0" />
+        {#<img src="{{ splash }}" alt="" class="object-cover w-full h-20 mt-0 mb-0" />#}
+        <img src="{{ splash }}" alt="" class="object-cover w-full mt-0 mb-0" />
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-x-5">
                 <div class="col-span-2 sm:col-span-3 markdown-content">
                         {{ content | safe }}

@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-const glob = require ("glob");
+const glob = require("glob");
 
 module.exports = function (eleventyConfig) {
   // STATIC FILES
@@ -66,4 +66,24 @@ module.exports = function (eleventyConfig) {
     // keep original content
     return content;
   });
+
+  // Custom event collections
+  eleventyConfig.addCollection("pastEvents", function (collectionApi) {
+    const now = new Date();
+    return collectionApi.getFilteredByTag("events").filter(function (e) {
+      return e.data.eventdate < now;
+    }).sort(function (a, b) {
+      return a.eventdate - b.eventdate;
+    }).reverse();
+  });
+
+  eleventyConfig.addCollection("futureEvents", function (collectionApi) {
+    const now = new Date();
+    return collectionApi.getFilteredByTag("events").filter(function (e) {
+      return e.data.eventdate >= now;
+    }).sort(function (a, b) {
+      return a.eventdate - b.eventdate;
+    }).reverse();
+  });
+
 }
