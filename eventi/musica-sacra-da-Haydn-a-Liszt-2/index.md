@@ -9,18 +9,9 @@ address: Via S. Gregorio Barbarigo, 10/a, 35020 Albignasego PD
 splash: images/candles2.jpg
 ---
 
-Un concerto per scoprire i capolavori del romanticismo tedesco per coro e orchestra da camera.
+Un concerto per scoprire i capolavori del Romanticismo Tedesco per coro e orchestra da camera.
 
-Il progetto Tra Haydn e Schubert si è sviluppato a Padova
-nell’ambito di realtà musicali giovanili con l’obiettivo di creare
-un legame tra realtà diverse e di produrre buon prodotto musicale,
-con attenzione alla musica sacra dell’epoca e ai piccoli capolavori
-ancora poco eseguiti.
+Un programma di musica sacra con musiche di Haydn, Mozart, Mendelssohn, Schubert e Liszt.
+Corte polifonica e Bottega Tartiniana insieme, per un viaggio musicale nel Romanticismo tedesco!
 
-Un banco di prova importante per gli esecutori, un’occasione di
-scambio tra i giovani musicisti, di incontro tra studenti
-universitari di diverse facoltà e un’occasione per ascoltare e
-celebrare un repertorio meraviglioso.
-
-Corte polifonica e Bottega Tariniana insieme, per un viaggio
-musicale nel Romanticismo tedesco!
+Ingresso gratuito con Green Pass, non è richiesta prenotazione.
