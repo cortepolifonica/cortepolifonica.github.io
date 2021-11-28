@@ -5,7 +5,7 @@ layout: event.njk
 tags: events
 eventdate: 2021-12-05 17:00:00
 place: Chiesa di Santa Maria Annunziata
-address: Via S. Gregorio Barbarigo, 10/a, 35020 Albignasego PD
+address: Via SS. Pietro e Paolo, 1, Albignasego (Ferri), PD
 splash: images/candles2.jpg
 ---
 
