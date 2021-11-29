@@ -73,7 +73,13 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByTag("events").filter(function (e) {
       return e.data.eventdate < now;
     }).sort(function (a, b) {
-      return a.eventdate - b.eventdate;
+      if (a.data.eventdate < b.data.eventdate) {
+        return -1;
+      } else if (a.data.eventdate > b.data.eventdate) {
+        return 1;
+      } else {
+        return 0;
+      }
     }).reverse();
   });
 
@@ -82,7 +88,13 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByTag("events").filter(function (e) {
       return e.data.eventdate >= now;
     }).sort(function (a, b) {
-      return a.eventdate - b.eventdate;
+      if (a.data.eventdate < b.data.eventdate) {
+        return -1;
+      } else if (a.data.eventdate > b.data.eventdate) {
+        return 1;
+      } else {
+        return 0;
+      }
     });
   });
 
