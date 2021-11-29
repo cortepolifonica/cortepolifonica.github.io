@@ -83,7 +83,7 @@ module.exports = function (eleventyConfig) {
       return e.data.eventdate >= now;
     }).sort(function (a, b) {
       return a.eventdate - b.eventdate;
-    }).reverse();
+    });
   });
 
 }
