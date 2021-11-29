@@ -4,7 +4,7 @@
 
 @layer components {
         .markdown-content {
-                @apply p-4 text-lg;
+                @apply text-lg;
         }
         .markdown-content > p {
                 @apply mb-4;
