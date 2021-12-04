@@ -29,8 +29,33 @@ gallery:
     {% for picture in event.pictures %}
     <img src="{{ '/' ~ picture }}" 
         class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox({{ loop.index0 }}, {{ event.pictures | jsonify }})"
     />
     {% endfor %}
   </div>
 {% endfor %}
 </div>
+
+{# The modal lightbox #}
+<div id="modal" class="fixed top-0 left-0 z-10 hidden w-full h-full bg-black bg-opacity-80">
+  <div id="modalContent" class="mx-auto my-auto w-8/10">
+    <a id="prev" class="text-gray-100 prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a id="next" class="text-gray-100 next" onclick="plusSlides(1)">&#10095;</a>
+    <img id="modalImage" class="max-h-full mx-auto w-9/10"></img>
+  </div>
+
+</div>
+
+<script>
+
+var globalImages = [];
+
+function lightbox(i, imgs) {
+  globalImages = imgs;
+  const modal = document.getElementById("modal");
+  const modalImage = document.getElementById("modalImage");
+  modal.style.display = "block";
+
+  modalImage.src = "/" + globalImages[i];
+}
+</script>

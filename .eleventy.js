@@ -98,4 +98,8 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addNunjucksFilter("jsonify", function(value) { 
+    return JSON.stringify(value);
+  });
+
 }
