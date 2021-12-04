@@ -38,7 +38,7 @@ gallery:
 
 {# The modal lightbox #}
 <div id="modal" class="fixed top-0 left-0 z-10 hidden w-full h-full bg-black bg-opacity-80">
-  <a class="absolute text-5xl text-gray-100 cursor-pointer right-10 top-5" onclick="closeLightbox()">&times;</a>
+  <a class="absolute z-20 text-5xl text-gray-100 cursor-pointer right-10 top-5" onclick="closeLightbox()">&times;</a>
   <div id="modalContent" class="relative flex items-center justify-center w-11/12 h-full mx-auto md:w-3/4">
     <a id="prev" class="absolute left-0 p-4 ml-4 text-2xl text-gray-100 cursor-pointer hover:bg-black hover:opacity-20" onclick="plusLightbox(-1)">&#10094;</a>
     <a id="next" class="absolute right-0 p-4 mr-4 text-2xl text-gray-100 cursor-pointer hover:bg-black hover:opacity-20" onclick="plusLightbox(1)">&#10095;</a>
@@ -54,15 +54,13 @@ var globalIdx = 0;
 
 function lightbox(i, imgs) {
   // Only if we are not on mobile
-  {# if (!navigator.userAgent.toLowerCase().match(/mobile/i)) { #}
-    globalImages = imgs;
-    globalIdx = i;
+  globalImages = imgs;
+  globalIdx = i;
 
-    const modal = document.getElementById("modal");
-    modal.style.display = "block";
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
 
-    updateLightbox();
-  {# } #}
+  updateLightbox();
 }
 
 function plusLightbox(offset) {
