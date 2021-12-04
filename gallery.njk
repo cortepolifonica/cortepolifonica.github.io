@@ -22,7 +22,7 @@ gallery:
 <div class="w-11/12 mx-auto mb-8 sm:w-8/12">
 {% for event in gallery %}
   <a href="{{ event.link }}">
-    <h1 class="mt-4 mb-4 text-2xl text-gray-500">{{ event.title }}</h1>
+    <h1 class="mt-4 mb-4 text-2xl text-gray-500">{{ event.title }} &mdash; {{ event.date.toLocaleDateString("it-IT", {year: "numeric", month: "long", day: "numeric"}) }}</h1>
   </a>
   {# <div class="grid grid-flow-row grid-cols-3 grid-rows-4 gap-6"> #}
   <div class="gap-4 masonry-1-col sm:masonry-2-col lg:masonry-3-col">
