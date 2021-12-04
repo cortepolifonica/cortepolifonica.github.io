@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <!-- Basic Page Needs –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Corte Polifonica</title>
+    <!-- add description -->
+    <meta name="description" content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno.">
+    <meta name="author" content="Matteo Ceccarello">
+    <!-- fill these tags for ogp.me social media integration -->
+    <!-- https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing -->
+    <meta property="og:title" content="Corte Polifonica" />
+    <meta property="og:url" content="https://cortepolifonica.it" />
+    <meta property="og:description" content="Corte Polifonica, ensemble vocale di Padova, repertorio romantico e moderno. Il coro nasce nel 2020.">
+    <meta property="og:image" content='/images/logo-corte-polifonica.png'>
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:type" content="website" />
+
+    <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Pacifico&family=Lato&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+    <script>
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+
+        function basename(str) {
+            var base = new String(str).substring(str.lastIndexOf('/') + 1);
+            if (base.lastIndexOf(".") != -1) {
+                base = base.substring(0, base.lastIndexOf("."));
+            }
+            return base;
+        }
+    </script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVT0Y3Q9LH"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-JVT0Y3Q9LH');
+	</script>
+
+</head>
+
+    <body class="font-serif transition-colors duration-700 white md:w-screen md:mx-auto">
+        <div id="nav-sentinel" class="w-full"></div>
+
+  <div id="navbar-container" class="w-full pt-2 mb-8 bg-backblack">
+    
+    <nav id="navbar"
+      class="z-50 flex flex-col text-2xl text-center text-gray-100 border-gray-500 font-extralight bg-backblack md:flex-row md:flex-no-wrap md:space-x-3 md:justify-between md:w-full lg:8/12 md:mx-auto md:text-center md:pl-4 md:pr-4">
+      <div id="navlogo" class="flex flex-row justify-between md:space-x-3">
+        <a href="/" class="flex flex-row justify-between space-x-3">
+          <img class="h-16 mt-1 mb-1 ml-1" src='/images/logo-corte-polifonica.png'></img>
+          <img class="h-10 mt-5 mb-5 sm:h-12" src='/images/corte-polifonica-text.png' alt="Corte Polifonica" />
+        </a>
+        <div class="block my-auto ml-3 mr-3 sm:hidden">
+          <button class="flex items-center px-3 py-2 text-gray-200 " onclick="toggleNavbar()">
+            <!-- <img class="w-12" src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Noun_project_-_Music_notes.svg"> -->
+            <svg class="w-8 h-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id='nav-links' class="z-50 flex-col justify-center hidden pt-5 pb-5 mt-2 space-x-2 sm:flex sm:flex-row sm:z-0">
+        <a href="/eventi">Eventi</a>
+        <span class="hidden md:inline">&middot;</span>
+        <a href="/gallery">Galleria</a>
+        <span class="hidden md:inline">&middot;</span>
+        <a href="#contatti">Contatti</a>
+        <span class="hidden md:inline">&middot;</span>
+        <a href="https://cecca.github.io/repertorio-coro">Area riservata</a>
+        <span class="hidden md:inline">&middot;</span>
+        <a href="https://apsdiapason.it">Diapason</a>
+      </div>
+    </nav>
+  </div>
+        
+<div class="w-11/12 mx-auto mb-8 sm:w-8/12">
+
+  <a href="/eventi/musica-sacra-da-Haydn-a-Liszt/">
+    <h1 class="mt-4 mb-4 text-2xl text-gray-500">Romanticismo tedesco &mdash; 17 ottobre 2021</h1>
+  </a>
+  
+  <div class="gap-4 masonry-1-col sm:masonry-2-col lg:masonry-3-col">
+    
+    <img src="/gallery/2021-10-17-1.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(0, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-2.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(1, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-3.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(2, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-5.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(3, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-4.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(4, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-6.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(5, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-7.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(6, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-8.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(7, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-9.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(8, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-10.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(9, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+    <img src="/gallery/2021-10-17-11.jpeg" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+        onclick="lightbox(10, [&quot;gallery/2021-10-17-1.jpeg&quot;,&quot;gallery/2021-10-17-2.jpeg&quot;,&quot;gallery/2021-10-17-3.jpeg&quot;,&quot;gallery/2021-10-17-5.jpeg&quot;,&quot;gallery/2021-10-17-4.jpeg&quot;,&quot;gallery/2021-10-17-6.jpeg&quot;,&quot;gallery/2021-10-17-7.jpeg&quot;,&quot;gallery/2021-10-17-8.jpeg&quot;,&quot;gallery/2021-10-17-9.jpeg&quot;,&quot;gallery/2021-10-17-10.jpeg&quot;,&quot;gallery/2021-10-17-11.jpeg&quot;])"
+    />
+    
+  </div>
+
+</div>
+
+
+<div id="modal" class="fixed top-0 left-0 z-10 hidden w-full h-full bg-black bg-opacity-80">
+  <a class="absolute z-20 text-5xl text-gray-100 cursor-pointer right-10 top-5" onclick="closeLightbox()">&times;</a>
+  <div id="modalContent" class="relative flex items-center justify-center w-11/12 h-full mx-auto md:w-3/4">
+    <a id="prev" class="absolute left-0 p-4 ml-4 text-2xl text-gray-100 cursor-pointer hover:bg-black hover:opacity-20" onclick="plusLightbox(-1)">&#10094;</a>
+    <a id="next" class="absolute right-0 p-4 mr-4 text-2xl text-gray-100 cursor-pointer hover:bg-black hover:opacity-20" onclick="plusLightbox(1)">&#10095;</a>
+    <img id="modalImage" src="/gallery/2021-10-17-1.jpeg" class="object-fill max-w-full max-h-screen rounded-lg"></img>
+  </div>
+
+</div>
+
+<script>
+
+var globalImages = [];
+var globalIdx = 0;
+
+function lightbox(i, imgs) {
+  // Only if we are not on mobile
+  globalImages = imgs;
+  globalIdx = i;
+
+  const modal = document.getElementById("modal");
+  modal.style.display = "block";
+
+  updateLightbox();
+}
+
+function plusLightbox(offset) {
+  globalIdx += offset;
+  updateLightbox();
+}
+
+function updateLightbox() {
+  const n = globalImages.length;
+  globalIdx = ((globalIdx % n) + n) % n;
+  console.log(globalIdx);
+  const modalImage = document.getElementById("modalImage");
+  modalImage.src = "/" + globalImages[globalIdx];
+}
+
+function closeLightbox() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+// Register key listeners
+document.onkeydown = function (e) {
+  const modal = document.getElementById("modal");
+  if (modal.style.display === "block") {
+    e = e || window.event;
+    switch (e.which || e.keyCode) {
+      case 27 : // esc
+        closeLightbox();
+        break;
+      case 37: // left
+        plusLightbox(-1);
+        break;  
+      case 39: // right
+        plusLightbox(1);
+        break;  
+    }
+  }
+}
+</script>
+
+        <div class="p-4 text-teal-100 bg-teal-900 ">
+    <div class="flex flex-col md:w-8/12 md:mx-auto">
+        <span color="text-teal-300">Copyright 2020 &copy;</span>
+        <span>Associazione Culturale Diapason</span>
+    </div>
+</div>
+
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+    function toggleNavbar() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    }
+</script>
+
+<script>
+
+    window.addEventListener("load", (event) => {
+        const splash = document.getElementById("splash");
+        const logo = document.getElementById("navlogo");
+        const navbar = document.getElementById("navbar");
+        const navbarContainer = document.getElementById("navbar-container");
+        const content = document.getElementById("content");
+        const filler = document.getElementById("splash-filler");
+        const dark = document.body.style.backgroundColor;
+        const light = "#F5F5F4";
+
+        // Observe the navbar position
+        const options = {
+            threshold: 0.75
+        };
+        new IntersectionObserver((entries, observer) => {
+            for (const sentinel of entries) {
+                if (!sentinel.isIntersecting) {
+                    console.log("show");
+                    navbarContainer.classList.remove("hidden");
+                    document.body.style.backgroundColor = light;
+                } else {
+                    console.log("hide");
+                    navbarContainer.classList.add("hidden");
+                    document.body.style.backgroundColor = dark
+                }
+            }
+        }, options)
+            .observe(document.querySelector("#splash"));
+
+        // observe the content div
+        // new IntersectionObserver((entries, observer) => {
+        //     for (const sentinel of entries) {
+        //         if (sentinel.isIntersecting) {
+        //             content.style.opacity = 1;
+        //             content.style.animation = "fadeIn 1000ms ease-in forwards";
+        //         } else {
+        //             content.style.opacity = 0;
+        //         }
+        //     }
+        // })
+        //     .observe(document.querySelector("#content-sentinel"));
+    }, false);
+</script>
+    </body>
+</html>
