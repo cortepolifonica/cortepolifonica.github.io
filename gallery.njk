@@ -1,0 +1,36 @@
+---
+layout: base.njk
+bgColor: white
+gallery:
+  - date: 2021-10-17
+    link: /eventi/musica-sacra-da-Haydn-a-Liszt/
+    title: Romanticismo tedesco
+    pictures:
+      - gallery/2021-10-17-1.jpeg
+      - gallery/2021-10-17-2.jpeg
+      - gallery/2021-10-17-3.jpeg
+      - gallery/2021-10-17-5.jpeg
+      - gallery/2021-10-17-4.jpeg
+      - gallery/2021-10-17-6.jpeg
+      - gallery/2021-10-17-7.jpeg
+      - gallery/2021-10-17-8.jpeg
+      - gallery/2021-10-17-9.jpeg
+      - gallery/2021-10-17-10.jpeg
+      - gallery/2021-10-17-11.jpeg
+---
+
+<div class="w-11/12 mx-auto mb-8 sm:w-8/12">
+{% for event in gallery %}
+  <a href="{{ event.link }}">
+    <h1 class="mt-4 mb-4 text-2xl text-gray-500">{{ event.title }}</h1>
+  </a>
+  {# <div class="grid grid-flow-row grid-cols-3 grid-rows-4 gap-6"> #}
+  <div class="gap-4 masonry-1-col sm:masonry-2-col lg:masonry-3-col">
+    {% for picture in event.pictures %}
+    <img src="{{ '/' ~ picture }}" 
+        class="mb-4 rounded shadow break-inside hover:shadow-2xl"
+    />
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
