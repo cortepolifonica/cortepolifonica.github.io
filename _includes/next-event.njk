@@ -1,6 +1,4 @@
-{% set nextEvent = collections.futureEvents | first %}
-
-{% if nextEvent %}
+{% for nextEvent in collections.futureEvents %}
 <a href="{{ nextEvent.url }}" class="transform hover:scale-110">
 <div class="pt-6 mt-10 font-serif transform bg-gray-100 rounded-lg shadow-lg md:mb-10 hover:shadow-2xl">
         <div class="pl-8 pr-8">
@@ -32,5 +30,5 @@
         </div> 
 </div>
 </a>
-{% endif %}
+{% endfor %}
 
