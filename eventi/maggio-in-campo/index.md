@@ -2,7 +2,7 @@
 title: Maggio in campo
 layout: event.njk
 tags: events
-eventdate: 2022-05-22 16:00:00
+eventdate: 2022-05-22 16:00:00 +2
 place: Campo dei girasoli
 address: via Bainsizza 31, Padova
 splash: images/girasoli.jpg

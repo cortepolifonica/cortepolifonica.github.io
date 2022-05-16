@@ -33,7 +33,9 @@ bgColor: white
                             <div class="bottom-0 text-4xl">
                                 {{ eventdate.toLocaleDateString("it-IT", {year: 'numeric'}) }}
                             </div>
-
+                        </div>
+                        <div class="text-4xl m-auto sm:m-0">
+                            {{ eventdate.toLocaleString("it-IT", {hour: '2-digit', minute: '2-digit'}) }}
                         </div>
 
                 </div>
