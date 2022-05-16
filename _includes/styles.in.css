@@ -24,7 +24,7 @@
 
 @layer components {
         .markdown-content {
-                @apply text-lg;
+                @apply text-xl;
         }
         .markdown-content > p {
                 @apply mb-4;
