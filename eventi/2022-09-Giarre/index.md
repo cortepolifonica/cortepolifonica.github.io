@@ -12,3 +12,4 @@ credit: https://unsplash.com/photos/W3wd-rmLP7I
 Un concerto per salutare e ringraziare don Odilio, della parrocchia di Giarre, per il lavoro svolto in questi anni di attività.
 La sua presenza costante ha significato per noi la possibilità di ripartire, di ricominciare a cantare in sicurezza, in un ambiente che è stato accogliente come una nuova casa. Grazie don Odilio!
 
+
