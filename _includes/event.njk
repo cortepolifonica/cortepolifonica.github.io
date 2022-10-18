@@ -10,7 +10,8 @@ bgColor: white
         {% endif %}
         {#<img src="{{ splash }}" alt="" class="object-cover w-full h-20 mt-0 mb-0" />#}
         <img src="{{ splash }}" alt="" class="object-cover w-full mt-0 mb-0" />
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-x-5">
+        <span class="text-xs text-gray-400"> Immagine: <a href="{{credit}}" class="underline">{{ credit }}</a></span>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-x-5 text-2xl">
                 <div class="col-span-2 sm:col-span-3">
                         <div class="mt-8 mb-8 markdown-content">
                                 {{ content | safe }}
