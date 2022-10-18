@@ -21,6 +21,11 @@ bgColor: white
                         <p class="text-lg text-gray-500">
                                 {{ address }}
                         </p>
+                        {% if map %}
+                        <p class="text-lg text-gray-500 underline">
+                                <a href='{{map}}'>Indicazioni stradali</a>
+                        </p>
+                        {% endif %}
                 </div>
                 <div class="flex flex-row order-first col-span-1 pl-4 pr-4 mx-auto space-x-4 sm:space-x-0 sm:flex-col sm:order-last">
                         <div class="text-8xl">
@@ -37,7 +42,6 @@ bgColor: white
                         <div class="text-4xl m-auto sm:m-0">
                             {{ eventdate.toLocaleString("it-IT", {hour: '2-digit', minute: '2-digit'}) }}
                         </div>
-
                 </div>
         </div>
 </main>
