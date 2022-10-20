@@ -11,18 +11,5 @@ splash: images/musicanti-di-brema.jpg
 credit: https://www.claudiapalmarucci.com/
 ---
 
-Accostando l'antico e il moderno
-il programma di questo concerto è un appassionante e intenso percorso
-musicale attraverso i secoli. Un viaggio fatto di balletti, madrigali e
-chanson! Coinvolge paesi lontani tra loro – dalla Germania alla Spagna,
-dall’Inghilterra all’Italia, e attraversa i secoli, coprendo un periodo storico
-di oltre 500 anni. In programma ci sono autori quali Giovanni Gastoldi, John
-Dowland, Josquin Desprez, ma anche Francis Poulenc, Claude Debussy e molti
-altri.
-
-In questo concerto creeremo i presupposti per un percorso musicale che porterà
-con sé amori, emozioni, molto divertimento, alcune trasformazioni, a volte
-animalesche, e farà sentire chiunque lo sperimenti un po’ diverso e un po’
-nuovo.
-
+Da Giovanni Gastoldi a Francis Poulenc, da Claude Debussy a Paul Hindemith. Un intenso ed appassionante percorso musicale che porterà con sé amori, emozioni, molto divertimento, e farà sentire chiunque lo sperimenti un po’ diverso e un po’ nuovo.
 
