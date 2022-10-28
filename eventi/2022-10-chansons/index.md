@@ -1,5 +1,5 @@
 ---
-title: [RINVIATO] Metamorfosi
+title: "[RINVIATO] Metamorfosi"
 subtitle: Le forme mutevoli del canto
 layout: event.njk
 tags: events
