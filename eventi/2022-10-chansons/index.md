@@ -1,5 +1,5 @@
 ---
-title: Metamorfosi
+title: [RINVIATO] Metamorfosi
 subtitle: Le forme mutevoli del canto
 layout: event.njk
 tags: events
@@ -10,6 +10,8 @@ map: https://goo.gl/maps/uy6tBGckjYGBPuFT9
 splash: images/musicanti-di-brema.jpg
 credit: https://www.claudiapalmarucci.com/
 ---
+
+**L'evento è rinviato a data da destinarsi**
 
 Da Giovanni Gastoldi a Francis Poulenc, da Claude Debussy a Paul Hindemith. Un intenso ed appassionante percorso musicale che porterà con sé amori, emozioni, molto divertimento, e farà sentire chiunque lo sperimenti un po’ diverso e un po’ nuovo.
 
