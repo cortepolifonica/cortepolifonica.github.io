@@ -5,7 +5,7 @@ tags: events
 eventdate: 2022-12-18 17:00:00
 place: Chiesa Cuore Immacolato di Maria
 address: via Giarre, 10, 35031 Abano Terme (PD)
-map: https://goo.gl/maps/VKGUa6SpxjDL5Zy48
+map: https://goo.gl/maps/ZDZw2PTTdG9b5BxG9
 splash: images/splash.jpg
 credit: https://unsplash.com/photos/dABKxsPTAEk
 ---

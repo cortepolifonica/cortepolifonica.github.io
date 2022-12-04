@@ -5,7 +5,7 @@ tags: events
 eventdate: 2023-01-08 21:00:00
 place: Parrocchia di S. Girolamo 
 address: Via Meggiaro, 35042 Este (PD)
-map: https://goo.gl/maps/vbaTwMdi8MKnUGA4
+map: https://goo.gl/maps/L7HDjDFiGqMQe1dGA
 splash: images/splash.jpg
 credit: https://unsplash.com/photos/dABKxsPTAEk
 ---
