@@ -2,7 +2,7 @@
 title: "Concerto di Pasqua"
 layout: event.njk
 tags: events
-eventdate: 2023-04-16 16:00:00
+eventdate: 2023-04-16 17:00:00
 place: Chiesa di San Benedetto
 address: Riviera San Benedetto, 36, 35189 Padova, PD
 map: https://goo.gl/maps/VA1HRehvYdHgoXje9
