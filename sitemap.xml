@@ -3,8 +3,16 @@
     
        
         <url>
+            <loc>/eventi/2023-04-16__concerto-di-Pasqua/</loc>
+            <lastmod>2023-04-16T00:00:00.000Z</lastmod>
+            <changefreq>monthly</changefreq>
+        </url>
+        
+    
+       
+        <url>
             <loc>/README/</loc>
-            <lastmod>2023-04-15T02:25:16.609Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.299Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -12,7 +20,7 @@
        
         <url>
             <loc>/eventi/2022-09-Giarre/</loc>
-            <lastmod>2023-04-15T02:25:16.625Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.319Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -20,7 +28,7 @@
        
         <url>
             <loc>/eventi/2022-10-chansons/</loc>
-            <lastmod>2023-04-15T02:25:16.625Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.319Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -28,7 +36,7 @@
        
         <url>
             <loc>/eventi/2022-11-rassegna-musica-sacra/</loc>
-            <lastmod>2023-04-15T02:25:16.629Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.323Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -36,7 +44,7 @@
        
         <url>
             <loc>/eventi/2022-12-Jubilate-Deo/</loc>
-            <lastmod>2023-04-15T02:25:16.633Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.327Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -44,7 +52,7 @@
        
         <url>
             <loc>/eventi/2023-01-Jubilate-Deo/</loc>
-            <lastmod>2023-04-15T02:25:16.637Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.331Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -52,7 +60,7 @@
        
         <url>
             <loc>/eventi/2023-03-tra-sacro-e-profano/</loc>
-            <lastmod>2023-04-15T02:25:16.641Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.335Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -60,7 +68,7 @@
        
         <url>
             <loc>/eventi/Pasqua-Giarre/</loc>
-            <lastmod>2023-04-15T02:25:16.649Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.343Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -68,7 +76,7 @@
        
         <url>
             <loc>/eventi/Pasqua-San-Gregorio/</loc>
-            <lastmod>2023-04-15T02:25:16.649Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.343Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -76,7 +84,7 @@
        
         <url>
             <loc>/eventi/</loc>
-            <lastmod>2023-04-15T02:25:16.649Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.343Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -84,7 +92,7 @@
        
         <url>
             <loc>/eventi/maggio-in-campo/</loc>
-            <lastmod>2023-04-15T02:25:16.653Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.347Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -92,7 +100,7 @@
        
         <url>
             <loc>/eventi/metamorfosi-2/</loc>
-            <lastmod>2023-04-15T02:25:16.653Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.347Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -100,7 +108,7 @@
        
         <url>
             <loc>/eventi/metamorfosi/</loc>
-            <lastmod>2023-04-15T02:25:16.653Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.347Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -108,7 +116,7 @@
        
         <url>
             <loc>/eventi/musica-sacra-da-Haydn-a-Liszt-2/</loc>
-            <lastmod>2023-04-15T02:25:16.661Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.355Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -116,7 +124,7 @@
        
         <url>
             <loc>/eventi/musica-sacra-da-Haydn-a-Liszt/</loc>
-            <lastmod>2023-04-15T02:25:16.665Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.359Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -124,7 +132,7 @@
        
         <url>
             <loc>/eventi/natale-esedra/</loc>
-            <lastmod>2023-04-15T02:25:16.665Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.359Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -132,7 +140,7 @@
        
         <url>
             <loc>/gallery/</loc>
-            <lastmod>2023-04-15T02:25:16.665Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.359Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
@@ -140,15 +148,7 @@
        
         <url>
             <loc>/</loc>
-            <lastmod>2023-04-15T02:25:16.665Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-       
-        <url>
-            <loc>/eventi/2023-04-16__concerto-di-Pasqua/</loc>
-            <lastmod>2023-04-16T00:00:00.000Z</lastmod>
+            <lastmod>2023-04-16T02:30:15.359Z</lastmod>
             <changefreq>monthly</changefreq>
         </url>
         
