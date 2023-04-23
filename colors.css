@@ -1,0 +1,28 @@
+@keyframes rotate-colors {
+    from {
+        color: #5dbbf0;
+    }
+    20% {
+        color: #27c456;
+    }
+    40% {
+        color: #f0654d;
+    }
+    60% {
+        color: #ebc931;
+    }
+    80% {
+        color: #14b8a6;
+    }
+    to {
+        color: #6366f1;
+    }
+}
+
+.color-rotate {
+    animation: rotate-colors 12s ease-in-out infinite alternate;
+}
+
+.animation-delay-1s {
+    animation-delay: 1s;
+}
