@@ -29,6 +29,11 @@ bgColor: white
                                 <a href='{{map}}'>Indicazioni stradali</a>
                         </p>
                         {% endif %}
+                        {% if flyer %}
+                        <a href="{{flyer}}">
+                        <img src="{{ flyer }}" alt="" class="object-cover w-full md:w-1/3 mt-4 mb-0" />
+                        </a>
+                        {% endif %}
                 </div>
                 <div class="flex flex-row order-first col-span-1 pl-4 pr-4 mx-auto space-x-4 sm:space-x-0 sm:flex-col sm:order-last">
                         <div class="text-8xl">
