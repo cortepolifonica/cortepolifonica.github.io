@@ -5,7 +5,7 @@ tags: events
 eventdate: 2023-10-21 18:30:00
 place: Bastione Alicorno
 address: Via Francesco Piccoli, 6, 35124 Padova PD
-map: https://goo.gl/maps/rjs6fkyeEjPNNZLN8
+map: https://maps.app.goo.gl/hmrAHsfQyNtJer7WA
 splash: images/volantino.jpeg
 flyer: images/volantino.jpeg
 ---
