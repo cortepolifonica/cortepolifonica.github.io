@@ -136,7 +136,10 @@ function updateLightbox() {
   globalIdx = ((globalIdx % n) + n) % n;
   console.log(globalIdx);
   const modalImage = document.getElementById("modalImage");
-  modalImage.src = "/" + globalImages[globalIdx];
+  // First put the thumbnail
+  modalImage.src = "/" + globalImages[globalIdx] + ".thumb.jpg";
+  // Then the high resolution
+  modalImage.src = "/" + globalImages[globalIdx] + ".medium.jpg";
 }
 
 function closeLightbox() {
