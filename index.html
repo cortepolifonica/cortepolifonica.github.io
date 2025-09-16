@@ -139,10 +139,10 @@
         </div>
 
         <div class="flex justify-center">
-            <a class="bg-yellow-500 p-4 text-3xl md:text-4xl text-gray-900 rounded"
-               href="mailto:aps.diapason@gmail.com">
+            <button class="bg-yellow-500 p-4 text-3xl md:text-4xl text-gray-900 rounded"
+                    onclick="toggleModal(true)">
                 Canta con noi
-            </a>
+            </button>
         </div>
 
         <!-- down arrow -->
@@ -309,6 +309,26 @@
 
     </div>
 </div>
+
+<div id="modal-action" class="hidden">
+    <div class="fixed top-0 left-0 w-full h-full bg-gray-700 opacity-75" onclick="toggleModal(false)"></div>
+    <div class="z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-full p-10 bg-gray-100 rounded shadow">
+        <h1 class="text-3xl md:text-4xl text-gray-800 ">Contattaci!</h1>
+        <p class="text-2xl md:text-4xl ">Per partecipare, scrivici a <a href="mailto:aps.diapason@gmail.com">aps.diapason@gmail.com</a> </p>
+    </div>
+</div>
+
+<script>
+function toggleModal(show) {
+  var x = document.getElementById("modal-action");
+  //if (x.style.display === "none") {
+  if (show) {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
+</script>
 
         <div class="p-4 text-teal-100 bg-teal-900 ">
     <div class="flex flex-col md:w-8/12 md:mx-auto">
