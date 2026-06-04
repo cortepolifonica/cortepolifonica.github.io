@@ -2,7 +2,7 @@
 title: Metamorfosi
 layout: event.njk
 tags: events
-eventdate: 2026-06-16 18:00:00
+eventdate: 2026-06-14 18:00:00
 place: Campo dei girasoli
 address: via Bainsizza 31, Padova
 splash: images/girasoli.jpg
